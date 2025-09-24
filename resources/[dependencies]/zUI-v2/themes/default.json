@@ -1,0 +1,51 @@
+{
+  "menu": {
+    "width": "20vw",
+    "displayBanner": true,
+    "displayInformations": true,
+    "displayControlsIndicator": true,
+    "cornersRadius": 0.5,
+    "perspective": true,
+    "margin": false,
+    "shadow": true,
+    "hoverStyle": "liquid",
+    "animations": {
+      "entry": "flipIn",
+      "exit": "flipOut",
+      "onSwitch": true,
+      "onScroll": false
+    },
+    "colors": {
+      "primary": "#a6322f",
+      "background": "rgba(18, 18, 18, 0.5)",
+      "description": "rgba(0, 0, 0, 0.7)",
+      "informations": "rgba(0, 0, 0, 0.7)",
+      "controlsIndicator": "rgba(0, 0, 0, 0.7)",
+      "itemSelected": "#a6322f",
+      "banner": "#a6322f"
+    },
+    "keyPressDelay": 300,
+    "sound": true,
+    "font": "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap",
+    "maxVisibleItems": 10
+  },
+  "info": {
+    "width": "20vw",
+    "cornerRadius": 0.5,
+    "perspective": true,
+    "shadow": true,
+    "animations": {
+      "entry": "zoomIn",
+      "exit": "slideOutVertical"
+    },
+    "colors": {
+      "primary": "#FF3837",
+      "background": "rgba(18, 18, 18, 0.5)"
+    },
+    "font": "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  },
+  "editMod": {
+    "menu": true,
+    "info": true
+  }
+}
