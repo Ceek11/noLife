@@ -1,0 +1,25 @@
+[
+    {
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour ouvrir le menu boss",
+        "job": "template",
+        "gradeAccess": [
+            0
+        ],
+        "coords": [
+            {
+                "z": 13.180264,
+                "y": -2008.360352,
+                "x": -1157.339233
+            }
+        ],
+        "label": "Menu Boss Template",
+        "name": "boss_template",
+        "permissions": {
+            "garage": true,
+            "menuF6": true,
+            "cloakroom": true,
+            "boss": true,
+            "chest": true
+        }
+    }
+]

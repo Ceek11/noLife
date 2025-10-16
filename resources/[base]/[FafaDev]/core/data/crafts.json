@@ -1,0 +1,31 @@
+{
+    "info_marker": {
+        "marker1": {
+            "label": "Marker 1",
+            "message": "Press ~INPUT_CONTEXT~ to access the craft.",
+            "coords": [   
+                {   
+                    "x": 423.487,
+                    "y": -1020.669,
+                    "z": 28.979
+                }
+            ],
+            "jobRestriction": {
+                "enabled": true,
+                "allowedJobs": ["unemployed", "police", "template"]
+            },
+            "anim_or_scenario": {
+                "dict": "random@migrant_cartel",
+                "name": "migrant_cartel_lead_1_female3"
+            },
+            "options": {
+                "crafts": [
+                    "craft_pistol",
+                    "craft_combatpistol",
+                    "craft_stungun"   
+                ]
+            }
+        }
+    }
+}
+

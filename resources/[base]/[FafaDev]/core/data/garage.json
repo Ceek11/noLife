@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Garage Central",
+        "type": "automobile",
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour ouvrir le garage",
+        "coords": [
+            {
+                "x": 215.124,
+                "y": -810.057,
+                "z": 30.731
+            }
+        ],
+        "spawnPositions": [
+            {
+                "x": 215.124,
+                "y": -810.057,
+                "z": 30.731,
+                "w": 160.0
+            },
+            {
+                "x": 213.124,
+                "y": -808.057,
+                "z": 30.731,
+                "w": 160.0
+            },
+            {
+                "x": 211.124,
+                "y": -806.057,
+                "z": 30.731,
+                "w": 160.0
+            }
+        ],
+        "jobAccess": [],
+        "gradeAccess": [],
+        "haveLicense": []
+    },
+    {
+        "name": "Fourrière",
+        "type": "automobile",
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour ouvrir la fourrière",
+        "coords": [
+            {
+                "x": 408.9,
+                "y": -1623.4,
+                "z": 29.3
+            }
+        ],
+        "spawnPositions": [
+            {
+                "x": 408.9,
+                "y": -1623.4,
+                "z": 29.3,
+                "w": 230.0
+            },
+            {
+                "x": 410.9,
+                "y": -1621.4,
+                "z": 29.3,
+                "w": 230.0
+            }
+        ],
+        "jobAccess": [],
+        "gradeAccess": [],
+        "haveLicense": [],
+        "isImpound": true
+    }
+]

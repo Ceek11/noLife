@@ -1,0 +1,1 @@
+{"senior":{"permissions":{"boss":false}},"coucou":{"permissions":{"chest":false,"garage":false,"menuF6":false,"cloakroom":false,"boss":false}},"boss":{"permissions":{"chest":true,"garage":true,"menuF6":true,"cloakroom":true,"boss":true}},"manager":{"permissions":{"boss":false}}}

@@ -1,0 +1,15 @@
+[
+    {
+        "label": "Vestiaire Template",
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder au vestiaire",
+        "job": "template",
+        "name": "cloakroom_template",
+        "coords": [
+            {
+                "z": 28.509,
+                "x": 450.202,
+                "y": -1024.169
+            }
+        ]
+    }
+]

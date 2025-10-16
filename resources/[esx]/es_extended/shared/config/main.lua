@@ -55,7 +55,7 @@ Config.PaycheckInterval = 7 * 60000 -- how often to receive paychecks in millise
 Config.SaveDeathStatus = true -- Save the death status of a player
 Config.EnableDebug = false -- Use Debug options?
 
-Config.DefaultJobDuty = true -- A players default duty status when changing jobs
+Config.DefaultJobDuty = false -- A players default duty status when changing jobs
 Config.OffDutyPaycheckMultiplier = 0.5 -- The multiplier for off duty paychecks. 0.5 = 50% of the on duty paycheck
 
 Config.Multichar = GetResourceState("esx_multicharacter") ~= "missing"
