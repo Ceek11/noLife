@@ -143,12 +143,13 @@
 ---@param inventory table
 ---@param weight number
 ---@param job ESXJob
+---@param job2 ESXJob
 ---@param loadout ESXInventoryWeapon[]
 ---@param name string
 ---@param coords vector4|{x: number, y: number, z: number, heading: number}
 ---@param metadata table
 ---@return xPlayer
-function CreateExtendedPlayer(playerId, identifier, ssn, group, accounts, inventory, weight, job, loadout, name, coords, metadata)
+function CreateExtendedPlayer(playerId, identifier, ssn, group, accounts, inventory, weight, job, job2, loadout, name, coords, metadata)
     ---@diagnostic disable-next-line: missing-fields
     local self = {} ---@type xPlayer
 
@@ -158,7 +159,8 @@ function CreateExtendedPlayer(playerId, identifier, ssn, group, accounts, invent
     self.identifier = identifier
     self.ssn = ssn
     self.inventory = inventory
-    self.job = job
+    self.job = job  
+    self.job2 = job2
     self.loadout = loadout
     self.name = name
     self.playerId = playerId
@@ -182,7 +184,11 @@ function CreateExtendedPlayer(playerId, identifier, ssn, group, accounts, invent
     if type(self.metadata.jobDuty) ~= "boolean" then
         self.metadata.jobDuty = self.job.name ~= "unemployed" and Config.DefaultJobDuty or false
     end
-    job.onDuty = self.metadata.jobDuty
+    self.job.onDuty = self.metadata.jobDuty
+    if type(self.metadata.job2Duty) ~= "boolean" then
+        self.metadata.job2Duty = self.job2.name ~= "unemployed" and Config.DefaultJobDuty or false
+    end
+    self.job2.onDuty = self.metadata.job2Duty
 
     ExecuteCommand(("add_principal identifier.%s group.%s"):format(self.license, self.group))
 
@@ -190,6 +196,7 @@ function CreateExtendedPlayer(playerId, identifier, ssn, group, accounts, invent
     stateBag:set("identifier", self.identifier, false)
     stateBag:set("license", self.license, false)
     stateBag:set("job", self.job, true)
+    stateBag:set("job2", self.job2, true)
     stateBag:set("group", self.group, true)
     stateBag:set("name", self.name, true)
 
@@ -343,6 +350,10 @@ function CreateExtendedPlayer(playerId, identifier, ssn, group, accounts, invent
 
     function self.getJob()
         return self.job
+    end
+
+    function self.getJob2()
+        return self.job2
     end
 
     function self.getLoadout(minimal)
@@ -600,6 +611,45 @@ function CreateExtendedPlayer(playerId, identifier, ssn, group, accounts, invent
         TriggerEvent("esx:setJob", self.source, self.job, lastJob)
         self.triggerEvent("esx:setJob", self.job, lastJob)
         Player(self.source).state:set("job", self.job, true)
+    end
+
+    function self.setJob2(newJob2, grade2, onDuty2)
+        grade2 = tostring(grade2)
+        local lastJob2 = self.job2
+
+        if not ESX.DoesJobExist(newJob2, grade2) then
+            return print(("[ESX] [^3WARNING^7] Ignoring invalid ^5.setJob2()^7 usage for ID: ^5%s^7, Job: ^5%s^7"):format(self.source, newJob2))
+        end
+
+        if newJob2 == "unemployed" then
+            onDuty2 = false
+        end
+
+        if type(onDuty2) ~= "boolean" then
+            onDuty2 = Config.DefaultJobDuty
+        end
+
+        local jobObject, gradeObject = ESX.Jobs[newJob2], ESX.Jobs[newJob2].grades[grade2]
+
+        self.job2 = {
+            id = jobObject.id,
+            name = jobObject.name,
+            label = jobObject.label,
+            onDuty = onDuty2,
+
+            grade = tonumber(grade2) or 0,
+            grade_name = gradeObject.name,
+            grade_label = gradeObject.label,
+            grade_salary = gradeObject.salary,
+
+            skin_male = gradeObject.skin_male and json.decode(gradeObject.skin_male) or {},
+            skin_female = gradeObject.skin_female and json.decode(gradeObject.skin_female) or {},
+        }
+
+        self.metadata.job2Duty = onDuty2
+        TriggerEvent("esx:setJob2", self.source, self.job2, lastJob2)
+        self.triggerEvent("esx:setJob2", self.job2, lastJob2)
+        Player(self.source).state:set("job2", self.job2, true)
     end
 
     function self.addWeapon(weaponName, ammo)

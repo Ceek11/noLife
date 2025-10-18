@@ -30,9 +30,6 @@ client_scripts {
     'src/_modules/**/client/*.lua',
     'src/utils/*.lua',
     'src/task/**/client.lua',
-    'src/admin/client/main.client.lua',
-    'src/admin/client/menu.client.lua',
-    'src/admin/client/noclip.client.lua',
     'src/admin/client/submenues/*.lua',
 }
 
