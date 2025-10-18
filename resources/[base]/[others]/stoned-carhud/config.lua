@@ -4,9 +4,9 @@ Config.vehicle = {
 	speedUnit = 'kmh', -- kmh or mph
 	maxSpeed = 350, 
 	seatbelt = {
-		playBuckleSound 	= true,
-		playUnbuckleSound 	= true,
-		playUnsafeSound 	= true
+		playBuckleSound 	= false,
+		playUnbuckleSound 	= false,
+		playUnsafeSound 	= false
 	},
 
 	keys = {

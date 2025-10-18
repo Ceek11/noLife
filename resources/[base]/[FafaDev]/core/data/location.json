@@ -1,0 +1,31 @@
+[
+    {
+        "vehicles_list": [
+            {
+                "deposit": 1000,
+                "label": " sultan COUCOU",
+                "model": "sultan",
+                "price": 100
+            }
+        ],
+        "name": "aeroport",
+        "label": "Aeroport",
+        "spawn_positions": [
+            {
+                "w": 40.65,
+                "z": 20.21440505981445,
+                "y": -2731.22265625,
+                "x": -1039.41455078125
+            }
+        ],
+        "coords": [
+            {
+                "z": 20.21440505981445,
+                "y": -2731.22265625,
+                "x": -1039.41455078125
+            }
+        ],
+        "drawmarker": false,
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder à la location"
+    }
+]

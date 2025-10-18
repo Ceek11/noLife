@@ -1,0 +1,15 @@
+[
+    {
+        "behavior": "immortal_static",
+        "scenario": "WORLD_HUMAN_AA_SMOKE",
+        "ped_coords": [
+            {
+                "w": 216.97,
+                "z": 20.21,
+                "y": -2731.16,
+                "x": -1039.47
+            }
+        ],
+        "ped_model": "a_m_m_business_01"
+    }
+]

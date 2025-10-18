@@ -88,7 +88,7 @@ function openGarageMenu(options)
                 end)
                 
                 RageUI.IsVisible(garage_obj_vehicles_personnel, function()
-                    RageUI.Separator(" VÉHICULES PERSONNELS ")
+                    RageUI.Separator("VÉHICULES PERSONNELS")
                     
                     if #vehiclesPersonnel > 0 then
                         for _, v in pairs(vehiclesPersonnel) do
@@ -108,15 +108,7 @@ function openGarageMenu(options)
                 end)
                 
                 
-                -- Menu des détails véhicule personnel
-                RageUI.IsVisible(garage_obj_vehicle_details, function()
-                    if not selected_vehicle then
-                        RageUI.Button("Erreur", "Aucun véhicule sélectionné", {}, true, {
-                            onSelected = function() end
-                        }, nil)
-                        return
-                    end
-                    
+                RageUI.IsVisible(garage_obj_vehicle_details, function() 
                     RageUI.Separator(" " .. (selected_vehicle.label or GetDisplayNameFromVehicleModel(selected_vehicle.vehicle.model)) .. " ")
                     RageUI.Line()
                     

@@ -1,0 +1,131 @@
+[
+    {
+        "jobs": [
+            "ambulance"
+        ],
+        "color": 1,
+        "grades": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "sprite": 61,
+        "label": "Hôpital Central",
+        "coords": {
+            "z": 29.89,
+            "y": -1433.47,
+            "x": 307.7
+        },
+        "scale": 0.8,
+        "id": 2,
+        "shortRange": true,
+        "area": {
+            "color": {
+                "g": 0,
+                "b": 0,
+                "a": 40,
+                "r": 255
+            },
+            "showBlip": false,
+            "radius": 75.0,
+            "enabled": true
+        }
+    },
+    {
+        "jobs": [],
+        "color": 2,
+        "grades": [],
+        "sprite": 108,
+        "label": "Banque Centrale",
+        "coords": {
+            "z": 29.37,
+            "y": -1040.2,
+            "x": 150.27
+        },
+        "scale": 0.9,
+        "id": 3,
+        "shortRange": true,
+        "area": {
+            "enabled": false
+        }
+    },
+    {
+        "jobs": [],
+        "color": 1,
+        "grades": [],
+        "sprite": 61,
+        "label": "Cp^^ppm",
+        "coords": {
+            "z": 12.76,
+            "y": -2009.23,
+            "x": -115.48
+        },
+        "scale": 1,
+        "id": 4,
+        "shortRange": true,
+        "area": {
+            "color": {
+                "g": 255,
+                "r": 255,
+                "a": 50,
+                "b": 255
+            },
+            "showBlip": true,
+            "radius": 50,
+            "enabled": true
+        }
+    },
+    {
+        "jobs": [],
+        "color": 1,
+        "grades": [],
+        "sprite": 60,
+        "label": "Pppmmmmmmm",
+        "coords": {
+            "z": 12.76,
+            "y": -2009.23,
+            "x": -115.48
+        },
+        "scale": 0.8,
+        "id": 5,
+        "shortRange": true,
+        "area": {
+            "color": {
+                "g": 255,
+                "b": 0,
+                "a": 50,
+                "r": 255
+            },
+            "showBlip": true,
+            "radius": 50,
+            "enabled": true
+        }
+    },
+    {
+        "jobs": [],
+        "sprite": 108,
+        "grades": [],
+        "id": 6,
+        "label": "Location",
+        "coords": {
+            "z": 20.21440505981445,
+            "y": -2731.22265625,
+            "x": -1039.41455078125
+        },
+        "scale": 2,
+        "color": 5,
+        "shortRange": true,
+        "area": {
+            "color": {
+                "g": 255,
+                "b": 255,
+                "a": 50,
+                "r": 255
+            },
+            "showBlip": true,
+            "radius": 50,
+            "enabled": true
+        }
+    }
+]

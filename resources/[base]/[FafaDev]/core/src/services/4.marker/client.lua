@@ -1,3 +1,16 @@
+TBL_MARKER_DESIGN = {
+    ["default"] = {
+        marker_type = 22,                    -- Type de marqueur (22 = cylindre)
+        marker_color = {r = 137, g = 201, b = 17, a = 255}, -- Couleur RGBA
+        marker_size = {x = 0.5, y = 0.5, z = 0.5},         -- Taille du marqueur
+        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
+        bobUpAndDown = false,                -- Mouvement de haut en bas
+        faceCamera = false,                  -- Face à la caméra
+        rotate = false,                      -- Rotation automatique
+    }
+}
+
+
 local tickHandlers = {}
 local intervalEnabled = false
 local activeHandlers = {}

@@ -49,11 +49,11 @@ Config.StoresBlips = {
         scale = 0.7,
         color = 0,
     },
-    --[[["surgeon"] = {
+    ["surgeon"] = {
         sprite = 403,
         scale = 0.7,
         color = 1,
-    },]]--
+    },
     ["tattoo"] = {
         sprite = 75,
         scale = 0.7,
@@ -114,13 +114,13 @@ Config.OutfitChangers = {
 
 -- set isGang to true if the requiredJob is a gang
 Config.ClothingRooms = {
-    -- [1] = {requiredJob = 'police', isGang = false, coords = vector3(454.68, -990.89, 29.69)},
-    -- [2] = {requiredJob = 'ambulance', isGang = false, coords = vector4(342.47, -586.15, 43.32, 342.56)},
-    -- [3] = {requiredJob = 'police', isGang = false, coords = vector3(314.76, 671.78, 14.73)},
-    -- [4] = {requiredJob = 'ambulance', isGang = false, coords = vector3(338.70, 659.61, 14.71)},
-    -- [5] = {requiredJob = 'ambulance', isGang = false, coords = vector3(-1098.45, 1751.71, 23.35)},
-    -- [6] = {requiredJob = 'police', isGang = false, coords = vector3(-77.59, -129.17, 5.03)},
-    -- [7] = {requiredJob = "realestate", isGang = false, coords = vector3(-131.45, -633.74, 168.82)}
+    [1] = {requiredJob = 'police', isGang = false, coords = vector3(454.68, -990.89, 29.69)},
+    [2] = {requiredJob = 'ambulance', isGang = false, coords = vector4(342.47, -586.15, 43.32, 342.56)},
+    [3] = {requiredJob = 'police', isGang = false, coords = vector3(314.76, 671.78, 14.73)},
+    [4] = {requiredJob = 'ambulance', isGang = false, coords = vector3(338.70, 659.61, 14.71)},
+    [5] = {requiredJob = 'ambulance', isGang = false, coords = vector3(-1098.45, 1751.71, 23.35)},
+    [6] = {requiredJob = 'police', isGang = false, coords = vector3(-77.59, -129.17, 5.03)},
+    [7] = {requiredJob = "realestate", isGang = false, coords = vector3(-131.45, -633.74, 168.82)}
 }
 
 -- This is working only on QBCore

@@ -1,46 +1,27 @@
 [
     {
-        "jobAccess": [],
+        "name": "Coiucou",
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour ouvrir le shop",
+        "coords": [
+            {
+                "x": -1039.41455078125,
+                "z": 20.21440505981445,
+                "y": -2731.22265625
+            }
+        ],
+        "haveLicense": [],
+        "gradeAccess": [],
         "items": [
             {
                 "price": 10,
                 "name": "bread"
-            }
-        ],
-        "name": "Salut",
-        "message": "Appuyer sur ~INPUT_CONTEXT~ pour ouvrir le shop",
-        "coords": [
-            {
-                "x": 39.586411,
-                "y": -743.623474,
-                "z": 44.23846
-            }
-        ],
-        "haveLicense": [],
-        "gradeAccess": []
-    },
-    {
-        "jobAccess": [],
-        "items": [
-            {
-                "name": "bread",
-                "price": 10
             },
             {
-                "name": "water",
-                "price": 20
+                "price": 20,
+                "name": "burger"
             }
         ],
-        "haveLicense": [],
-        "message": "Appuyer sur ~INPUT_CONTEXT~ pour ouvrir le shop",
-        "coords": [
-            {
-                "x": 32.586411,
-                "y": -743.623474,
-                "z": 44.238464
-            }
-        ],
-        "name": "coucou",
-        "gradeAccess": []
+        "jobAccess": [],
+        "drawmarker": false
     }
 ]
