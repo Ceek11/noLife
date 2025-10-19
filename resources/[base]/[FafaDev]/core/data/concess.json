@@ -12,13 +12,13 @@
             ],
             "message": "Véhicule de luxe - Performance exceptionnelle",
             "jobAccess": ["cardealer"],
-            "categories": ["super", "luxury"],
+            "categories": ["super", "compacts", "sports"],
             "spawnPositions": [
                 {
 
-                    "x": -50.0,
-                    "y": -1100.0,
-                    "z": 25.0,
+                    "x": -70.679108,
+                    "y": -1105.807617,
+                    "z": 26.081764,
                     "heading": 0.0
                 }
             ]
@@ -36,7 +36,7 @@
                 }
             ],
             "message": "Prévisualisation - Supercar sportive",
-            "categories": ["super", "luxury"],
+            "categories": ["super", "compacts", "sports"],
             "spawnPositions": [
                 {
                     "x": -50.0,
@@ -44,7 +44,14 @@
                     "z": 25.0,
                     "heading": 0.0
                 }
-            ]
+            ],
+            "testPoint": {
+                "x": -1032.0,
+                "y": -2730.0,
+                "z": 13.75,
+                "heading": 330.0
+            },
+            "testZoneRadius": 500.0
         }
     ]
 }

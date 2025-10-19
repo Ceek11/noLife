@@ -4,6 +4,11 @@ local tasks = {
             FUN_LOAD_CONCESS()
         end
     end},
+    {name = "FUN_LOAD_GARAGES", func = function() 
+        if FUN_LOAD_GARAGES then
+            FUN_LOAD_GARAGES()
+        end
+    end},
     {name = "FUN_LOAD_POLE_DANCE", func = function() 
         if FUN_LOAD_POLE_DANCE then
             FUN_LOAD_POLE_DANCE()
@@ -32,11 +37,6 @@ local tasks = {
     {name = "FUN_LOAD_CLOAKROOMS", func = function() 
         if FUN_LOAD_CLOAKROOMS then
             FUN_LOAD_CLOAKROOMS()
-        end
-    end},
-    {name = "FUN_LOAD_GARAGES", func = function() 
-        if FUN_LOAD_GARAGES then
-            FUN_LOAD_GARAGES()
         end
     end},
     {name = "FUN_LOAD_LOCATIONS", func = function() 

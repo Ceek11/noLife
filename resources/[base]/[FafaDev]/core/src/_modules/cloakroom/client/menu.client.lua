@@ -114,16 +114,6 @@ function template_menu_cloakroom(cloakroomData)
                 end)
 
                 RageUI.IsVisible(template_obj_update_outfit, function()
-                    if not template_selected_outfit then
-                        RageUI.Separator("Aucune tenue sélectionnée")
-                        RageUI.Button("Retour", "Retourner au menu précédent", {}, true, {
-                            onSelected = function()
-                                RageUI.CloseAll()
-                            end
-                        })
-                        return
-                    end
-                    
                     RageUI.Separator(" MODIFICATION: " .. template_selected_outfit.info_outfit.label .. " ")
                     RageUI.Line()
                     
@@ -228,7 +218,6 @@ function template_menu_cloakroom(cloakroomData)
                             
                             CORE.trigger_server_event("templatejob:to_server:remove_cloakroom", current_cloakroom_data.job, template_selected_outfit.id)
                             template_selected_outfit = nil
-                            RageUI.CloseAll()
                         end
                     })
                 end)

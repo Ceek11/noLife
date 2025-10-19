@@ -61,8 +61,14 @@ function FUN_GET_CATEGORIES()
     end)
 end
 
-function FUN_GET_VEHICLES()
+function FUN_GET_VEHICLES(category)
     CORE.trigger_server_callback("fafadev:to_server:get_vehicles", function(vehicles)
         TBL_VEHICLES = vehicles
-    end)
+    end, category)
+end
+
+function FUN_GET_VEHICLES_BY_CATEGORIES(categories)
+    CORE.trigger_server_callback("fafadev:to_server:get_vehicles_by_categories", function(vehicles)
+        TBL_VEHICLES = vehicles
+    end, categories)
 end

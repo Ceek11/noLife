@@ -1,14 +1,12 @@
 function FUN_HANDLE_GARAGES(garages)
     AddTickHandler("garages", 0, function()
         local playerCoords = GetEntityCoords(PlayerPedId())
-        local currentTime = GetGameTimer()
         local markerNear = false
         local xPlayer = ESX.GetPlayerData()
         local playerJob = xPlayer and xPlayer.job and xPlayer.job.name or nil
-        local playerGrade = xPlayer and xPlayer.job and xPlayer.job.grade or 0
         
         for name, data in pairs(garages) do
-            if FUN_CHECK_GARAGE_ACCESS(data, playerJob, playerGrade) then
+            if FUN_CHECK_GARAGE_ACCESS(data, playerJob) then
                 for _, coord in pairs(data.coords) do
                     local distance = #(playerCoords - vector3(coord.x, coord.y, coord.z))
                     if distance < 10.0 then
@@ -25,7 +23,8 @@ function FUN_HANDLE_GARAGES(garages)
                                     typeGarage = data.type,
                                     spawnVehPositions = data.spawnPositions,
                                     previousPosition = {x = coord.x, y = coord.y, z = coord.z},
-                                    isImpound = data.isImpound or false
+                                    isImpound = data.isImpound or false,
+                                    jobAccess = data.jobAccess or {}
                                 }
                                 
                                 if data.isImpound then
@@ -48,60 +47,18 @@ function FUN_HANDLE_GARAGES(garages)
     end)
 end
 
-function FUN_CHECK_GARAGE_ACCESS(garageData, playerJob, playerGrade)
-    -- Vérifier l'accès par job
+function FUN_CHECK_GARAGE_ACCESS(garageData, playerJob)
     if garageData.jobAccess and #garageData.jobAccess > 0 then
-        local hasJobAccess = false
         for _, job in pairs(garageData.jobAccess) do
             if playerJob == job then
-                hasJobAccess = true
-                break
-            end
-        end
-        if not hasJobAccess then
-            return false
-        end
-    end
-    
-    -- Vérifier l'accès par grade
-    if garageData.gradeAccess and #garageData.gradeAccess > 0 then
-        local hasGradeAccess = false
-        for _, grade in pairs(garageData.gradeAccess) do
-            if playerGrade >= grade then
-                hasGradeAccess = true
-                break
-            end
-        end
-        if not hasGradeAccess then
-            return false
-        end
-    end
-    
-    -- Vérifier les licences requises
-    if garageData.haveLicense and #garageData.haveLicense > 0 then
-        local hasAllLicenses = true
-        for _, license in pairs(garageData.haveLicense) do
-            if not FUN_HAS_LICENSE(license) then
-                hasAllLicenses = false
-                break
-            end
-        end
-        if not hasAllLicenses then
-            return false
-        end
-    end
-    
-    return true
-end
-
-function FUN_HAS_LICENSE(licenseName)
-    local xPlayer = ESX.GetPlayerData()
-    if xPlayer and xPlayer.licenses then
-        for _, license in pairs(xPlayer.licenses) do
-            if license.name == licenseName and license.status then
                 return true
             end
         end
+        return false
     end
-    return false
+    return true
 end
+
+
+
+

@@ -25,7 +25,6 @@ function FUN_OPEN_EMPLOYEMENT_CENTER_MENU(data)
                                 selectedJob = job
                                 jobConfirmationActive = true
                                 open_employement_center_menu = false
-                                RageUI.CloseAll()
                             end
                         })
                     end

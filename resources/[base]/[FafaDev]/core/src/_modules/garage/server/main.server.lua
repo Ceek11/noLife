@@ -8,12 +8,7 @@ function FUN_LOAD_GARAGES()
             for _, garage in pairs(tbl_garages) do
                 TBL_GARAGES[garage.name] = garage
             end
-            print("^2[GARAGE] Chargé " .. #tbl_garages .. " garage(s) depuis le JSON^0")
-        else
-            print("^1[GARAGE] Erreur lors du parsing du fichier garage.json^0")
         end
-    else
-        print("^1[GARAGE] Impossible de charger le fichier garage.json^0")
     end
 end
 

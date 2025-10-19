@@ -28,9 +28,8 @@ function openPoleDanceMenu(data)
                                 RageUI.Button("Danser " .. anim_data.label, anim_data.description, {}, true, {
                                     onSelected = function()
                                         start_poledance(anim_data.id)
-                                        RageUI.CloseAll()
                                     end
-                                }, nil)
+                                })
                             end
                         end
                         
@@ -38,14 +37,13 @@ function openPoleDanceMenu(data)
                             RageUI.Button("~r~Arrêter la danse", "Arrêter la danse en cours", {}, true, {
                                 onSelected = function()
                                     stop_poledance()
-                                    RageUI.CloseAll()
                                 end
-                            }, nil)
+                            })
                         end
                     else
                         RageUI.Button("~r~Aucune animation disponible", "Aucune animation configurée", {}, true, {
                             onSelected = function() end
-                        }, nil)
+                        })
                     end
                 end)
                 
