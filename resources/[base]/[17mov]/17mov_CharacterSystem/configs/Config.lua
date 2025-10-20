@@ -86,7 +86,7 @@ Config.Stores = {
     [20] = {price = 15, shopType = 'barber', coords = vector4(1212.87, -472.89, 65.21, 61.65), ped = `s_f_m_fembarber`, radius = 3.0, hideBlip = false },
     [21] = {price = 15, shopType = 'barber', coords = vector4(-32.97, -152.33, 56.08, 343.66), ped = `s_f_m_fembarber`, radius = 3.0, hideBlip = false },
     [22] = {price = 15, shopType = 'barber', coords = vector4(-278.02, 6228.53, 30.7, 55.18), ped = `s_f_m_fembarber`, radius = 3.0, hideBlip = false },
-    [23] = {price = 3000, shopType = 'surgeon', coords = vector4(299.8, -578.75, 42.26, 91.1), ped = `s_m_m_doctor_01`, radius = 3.0, hideBlip = false },
+    -- [23] = {price = 3000, shopType = 'surgeon', coords = vector4(299.8, -578.75, 42.26, 91.1), ped = `s_m_m_doctor_01`, radius = 3.0, hideBlip = false },
     [24] = {price = 1500, shopType = 'tattoo', coords = vector4(1321.65, -1654.16, 51.28, 340.9), ped = `u_m_y_tattoo_01`, radius = 3.0, hideBlip = false },
     [25] = {price = 1500, shopType = 'tattoo', coords = vector4(324.66, 180.56, 102.59, 103.23), ped = `u_m_y_tattoo_01`, radius = 3.0, hideBlip = false },
     [26] = {price = 1500, shopType = 'tattoo', coords = vector4(-3169.8, 1077.75, 19.83, 198.68), ped = `u_m_y_tattoo_01`, radius = 3.0, hideBlip = false },
@@ -114,13 +114,13 @@ Config.OutfitChangers = {
 
 -- set isGang to true if the requiredJob is a gang
 Config.ClothingRooms = {
-    [1] = {requiredJob = 'police', isGang = false, coords = vector3(454.68, -990.89, 29.69)},
-    [2] = {requiredJob = 'ambulance', isGang = false, coords = vector4(342.47, -586.15, 43.32, 342.56)},
-    [3] = {requiredJob = 'police', isGang = false, coords = vector3(314.76, 671.78, 14.73)},
-    [4] = {requiredJob = 'ambulance', isGang = false, coords = vector3(338.70, 659.61, 14.71)},
-    [5] = {requiredJob = 'ambulance', isGang = false, coords = vector3(-1098.45, 1751.71, 23.35)},
-    [6] = {requiredJob = 'police', isGang = false, coords = vector3(-77.59, -129.17, 5.03)},
-    [7] = {requiredJob = "realestate", isGang = false, coords = vector3(-131.45, -633.74, 168.82)}
+    -- [1] = {requiredJob = 'police', isGang = false, coords = vector3(454.68, -990.89, 29.69)},
+    -- [2] = {requiredJob = 'ambulance', isGang = false, coords = vector4(342.47, -586.15, 43.32, 342.56)},
+    -- [3] = {requiredJob = 'police', isGang = false, coords = vector3(314.76, 671.78, 14.73)},
+    -- [4] = {requiredJob = 'ambulance', isGang = false, coords = vector3(338.70, 659.61, 14.71)},
+    -- [5] = {requiredJob = 'ambulance', isGang = false, coords = vector3(-1098.45, 1751.71, 23.35)},
+    -- [6] = {requiredJob = 'police', isGang = false, coords = vector3(-77.59, -129.17, 5.03)},
+    -- [7] = {requiredJob = "realestate", isGang = false, coords = vector3(-131.45, -633.74, 168.82)}
 }
 
 -- This is working only on QBCore
