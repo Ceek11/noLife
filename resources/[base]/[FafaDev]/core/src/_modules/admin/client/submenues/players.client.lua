@@ -19,5 +19,3 @@ function OpenMenuPlayersAdmin()
         ]--]]
     end)
 end
-
-print("YZATSU mon petit")
