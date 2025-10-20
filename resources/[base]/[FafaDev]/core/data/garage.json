@@ -18,7 +18,15 @@
                 "w": 160.0
             }
         ],
-        "jobAccess": ["unemployed"]
+        "jobAccess": ["unemployed"],
+        "deletePoints": [
+            {
+                "x": 220.0,
+                "y": -808.0,
+                "z": 30.7,
+                "message": "Appuyer sur ~INPUT_CONTEXT~ pour ranger votre véhicule"
+            }
+        ]
     },
     {
         "name": "Fourrière",

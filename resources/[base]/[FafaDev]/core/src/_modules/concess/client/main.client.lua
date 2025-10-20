@@ -11,7 +11,7 @@ function FUN_HANDLE_CONCESS(concess)
                     if distance < 15.0 then
                         markerNear = true
                         if data.drawmarker then
-                            DrawMarker(2, coord.x, coord.y, coord.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 2.0, 1.0, 255, 0, 0, 255, false, true, 2, false, false, false, false)
+                            DrawCustomMarker(coord.x, coord.y, coord.z)
                         end
                     end
                     if distance < 2.0 then
@@ -32,7 +32,7 @@ function FUN_HANDLE_CONCESS(concess)
                     if distance < 15.0 then
                         markerNear = true
                         if data.drawmarker then
-                            DrawMarker(TBL_MARKER_DESIGN["default"].marker_type, coord.x, coord.y, coord.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, TBL_MARKER_DESIGN["default"].marker_size.x, TBL_MARKER_DESIGN["default"].marker_size.y, TBL_MARKER_DESIGN["default"].marker_size.z, TBL_MARKER_DESIGN["default"].marker_color.r, TBL_MARKER_DESIGN["default"].marker_color.g, TBL_MARKER_DESIGN["default"].marker_color.b, TBL_MARKER_DESIGN["default"].marker_color.a, false, true, 2, false, false, false, false)   
+                            DrawCustomMarker(coord.x, coord.y, coord.z)   
                         end
                     end
                     if distance < 2.0 then

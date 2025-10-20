@@ -14,7 +14,7 @@ function FUN_HANDLE_BOSS_MENUS(boss_data)
                         markerNear = true
                         -- Vérifier si le marqueur doit être dessiné
                         if data.drawmarker ~= false then
-                            DrawMarker(1, coord.x, coord.y, coord.z - 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 255, 0, 0, 200, false, true, 2, false, false, false, false)
+                            DrawCustomMarker(coord.x, coord.y, coord.z)
                         end
                         if distance < 2.0 then
                             ESX.ShowHelpNotification(data.message)

@@ -55,16 +55,7 @@ function FUN_HANDLE_POLE_DANCE(pole_dance_locations)
                         markerNear = true
                         -- Vérifier si le marqueur doit être dessiné
                         if data.drawmarker ~= false then
-                            local markerDesign = TBL_MARKER_DESIGN["default"]
-                            DrawMarker(
-                                markerDesign.marker_type,
-                                coord.x, coord.y, coord.z - 1.0,
-                                markerDesign.marker_rotation.x, markerDesign.marker_rotation.y, markerDesign.marker_rotation.z,
-                                0.0, 0.0, 0.0,
-                                markerDesign.marker_size.x, markerDesign.marker_size.y, markerDesign.marker_size.z,
-                                markerDesign.marker_color.r, markerDesign.marker_color.g, markerDesign.marker_color.b, markerDesign.marker_color.a,
-                                markerDesign.bobUpAndDown, markerDesign.faceCamera, 2, markerDesign.rotate, false, false, false
-                            )
+                            DrawCustomMarker(coord.x, coord.y, coord.z)
                         end
                         if distance < 2.0 then
                             ESX.ShowHelpNotification(data.message)

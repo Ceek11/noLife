@@ -89,6 +89,34 @@ function deleteGarage(typeGarage, garageName, spawnVehPositions)
     ESX.ShowNotification("Tu n'as pas de véhicule dans la zone")
 end
 
+function deleteVehicleDirect(garageName, typeGarage, spawnVehPositions)
+    local playerPed = PlayerPedId()
+    local playerCoords = GetEntityCoords(playerPed)
+    local vehicles = GetGamePool("CVehicle")
+    
+    -- Chercher le véhicule le plus proche du joueur
+    local closestVehicle = nil
+    local closestDistance = 5.0 -- Distance maximale de 5 mètres
+    
+    for _, veh in pairs(vehicles) do
+        local vehiclePos = GetEntityCoords(veh)
+        local distance = #(playerCoords - vehiclePos)
+        
+        if distance < closestDistance then
+            closestVehicle = veh
+            closestDistance = distance
+        end
+    end
+    
+    if closestVehicle then
+        local vehicleProps = ESX.Game.GetVehicleProperties(closestVehicle)
+        vehicleProps.damage = GetVehiculeDamageStatus(closestVehicle)
+        CORE.trigger_server_event("fCore:deleteVehicleDirect", typeGarage, garageName, vehicleProps, NetworkGetNetworkIdFromEntity(closestVehicle))
+    else
+        ESX.ShowNotification("~r~Aucun véhicule à proximité")
+    end
+end
+
 RegisterNetEvent("fCore:deleteVehicle", function(netId)
     local veh = NetworkGetEntityFromNetworkId(netId)
     if veh ~= 0 and DoesEntityExist(veh) then DeleteEntity(veh) end
@@ -96,4 +124,9 @@ end)
 
 RegisterNetEvent("fCore:spawnVehicle", function(vehicle, plate, spawnVehPositions)
     spawnVehicle(vehicle, plate, spawnVehPositions)
+end)
+
+CORE.register_client_callback("fafadev:to_client:refresh_garages", function(handler, garages)
+    TBL_GARAGES = garages
+    handler()
 end)

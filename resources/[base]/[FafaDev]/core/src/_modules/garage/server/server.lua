@@ -187,6 +187,38 @@ CORE.register_server_event("fCore:deleteGarage", function(_src, type, garageName
     end)
 end)
 
+CORE.register_server_event("fCore:deleteVehicleDirect", function(_src, type, garageName, vehicleProps, netId)
+    local xPlayer = ESX.GetPlayerFromId(_src)
+    if not xPlayer then return end
+    if not vehicleProps or not vehicleProps.plate then
+        TriggerClientEvent("esx:showNotification", _src, "~r~Propriétés du véhicule invalides.")
+        return
+    end
+
+    local row = MySQL.single.await('SELECT * FROM owned_vehicles WHERE plate = ?', {vehicleProps.plate})
+    if not row then
+        TriggerClientEvent("esx:showNotification", _src, "~r~Aucun véhicule trouvé avec cette plaque.")
+        return
+    end
+    if row.type ~= type then
+        TriggerClientEvent("esx:showNotification", _src, "~r~Vous n'avez pas le droit de ranger ce véhicule dans ce garage.")
+        return
+    end
+    if row.owner ~= xPlayer.identifier then
+        TriggerClientEvent("esx:showNotification", _src, "~r~Le véhicule ne vous appartient pas.")
+        return
+    end
+    
+    MySQL.Async.execute("UPDATE owned_vehicles SET stored = 1, pound = 0, parking = ?, vehicle = ? WHERE plate = ?", {garageName, json.encode(vehicleProps), vehicleProps.plate}, function(rowsChanged)
+        if rowsChanged > 0 then
+            TriggerClientEvent("esx:showNotification", _src, "~g~Véhicule rangé avec succès")
+            TriggerClientEvent("fCore:deleteVehicle", _src, netId)
+        else
+            TriggerClientEvent("esx:showNotification", _src, "~r~Erreur lors du rangement")
+        end
+    end)
+end)
+
 AddEventHandler('onResourceStart', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then return end
     MySQL.Async.execute("UPDATE owned_vehicles SET pound = 1 WHERE stored = 0 AND pound = 0")

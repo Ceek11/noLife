@@ -24,6 +24,3 @@
 > Plonger 
 > Combat 
 > RCORE (Faut que je te montre)
-
-
-

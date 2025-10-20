@@ -7,8 +7,60 @@ TBL_MARKER_DESIGN = {
         bobUpAndDown = false,                -- Mouvement de haut en bas
         faceCamera = false,                  -- Face à la caméra
         rotate = false,                      -- Rotation automatique
+    },
+    ["garage"] = {
+        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
+        marker_color = {r = 0, g = 150, b = 255, a = 200}, -- Couleur bleue
+        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
+        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
+        bobUpAndDown = false,                -- Mouvement de haut en bas
+        faceCamera = true,                   -- Face à la caméra
+        rotate = false,                      -- Rotation automatique
+    },
+    ["garage_impound"] = {
+        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
+        marker_color = {r = 255, g = 0, b = 0, a = 200},   -- Couleur rouge
+        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
+        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
+        bobUpAndDown = false,                -- Mouvement de haut en bas
+        faceCamera = true,                   -- Face à la caméra
+        rotate = false,                      -- Rotation automatique
+    },
+    ["location"] = {
+        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
+        marker_color = {r = 0, g = 150, b = 255, a = 200}, -- Couleur bleue
+        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
+        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
+        bobUpAndDown = false,                -- Mouvement de haut en bas
+        faceCamera = true,                   -- Face à la caméra
+        rotate = false,                      -- Rotation automatique
+    },
+    ["shop"] = {
+        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
+        marker_color = {r = 0, g = 150, b = 255, a = 200}, -- Couleur bleue
+        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
+        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
+        bobUpAndDown = false,                -- Mouvement de haut en bas
+        faceCamera = true,                   -- Face à la caméra
+        rotate = false,                      -- Rotation automatique
     }
 }
+
+-- Fonction utilitaire pour dessiner un marqueur avec un design personnalisé
+function DrawCustomMarker(x, y, z, designName, offsetZ)
+    local design = TBL_MARKER_DESIGN[designName] or TBL_MARKER_DESIGN["default"]
+    local zOffset = offsetZ or -1.0
+    
+    DrawMarker(
+        design.marker_type,
+        x, y, z + zOffset,
+        design.marker_rotation.x, design.marker_rotation.y, design.marker_rotation.z,
+        0.0, 0.0, 0.0,
+        design.marker_size.x, design.marker_size.y, design.marker_size.z,
+        design.marker_color.r, design.marker_color.g, design.marker_color.b, design.marker_color.a,
+        design.bobUpAndDown and 1 or 0, design.faceCamera and 1 or 0, 2, design.rotate and 1 or 0, false, false, false
+    )
+end
 
 
 local tickHandlers = {}

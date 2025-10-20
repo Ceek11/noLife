@@ -19,7 +19,7 @@ function FUN_HANDLE_CLOAKROOMS(tbl_cloakrooms)
                     local distance = #(playerCoords - vector3(coord.x, coord.y, coord.z))
                     if distance < 10.0 then
                         markerNear = true
-                        DrawMarker(1, coord.x, coord.y, coord.z - 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0, 150, 255, 200, false, true, 2, false, false, false, false)
+                        DrawCustomMarker(coord.x, coord.y, coord.z)
                         if distance < 2.0 then
                             ESX.ShowHelpNotification(data.message)
                             if IsControlJustPressed(0, 38) then

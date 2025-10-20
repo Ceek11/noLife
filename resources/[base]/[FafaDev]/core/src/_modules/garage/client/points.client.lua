@@ -7,12 +7,12 @@ function FUN_HANDLE_GARAGES(garages)
         
         for name, data in pairs(garages) do
             if FUN_CHECK_GARAGE_ACCESS(data, playerJob) then
+                -- Gestion des points de garage normaux
                 for _, coord in pairs(data.coords) do
                     local distance = #(playerCoords - vector3(coord.x, coord.y, coord.z))
                     if distance < 10.0 then
                         markerNear = true
-                        local markerColor = data.isImpound and {255, 0, 0, 200} or {0, 150, 255, 200}
-                        DrawMarker(1, coord.x, coord.y, coord.z - 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, markerColor[1], markerColor[2], markerColor[3], markerColor[4], false, true, 2, false, false, false, false)
+                        DrawCustomMarker(coord.x, coord.y, coord.z)
                         
                         if distance < 2.0 then
                             ESX.ShowHelpNotification(data.message)
@@ -31,6 +31,25 @@ function FUN_HANDLE_GARAGES(garages)
                                     openFourriereMenu(garageOptions)
                                 else
                                     openGarageMenu(garageOptions)
+                                end
+                            end
+                        end
+                    end
+                end
+                
+                -- Gestion des points de suppression (visible seulement si dans un véhicule)
+                if data.deletePoints and IsPedInAnyVehicle(PlayerPedId(), false) then
+                    for _, deletePoint in pairs(data.deletePoints) do
+                        local distance = #(playerCoords - vector3(deletePoint.x, deletePoint.y, deletePoint.z))
+                        if distance < 10.0 then
+                            markerNear = true
+                            -- Marqueur rouge pour les points de suppression
+                            DrawCustomMarker(deletePoint.x, deletePoint.y, deletePoint.z)
+                            
+                            if distance < 2.0 then
+                                ESX.ShowHelpNotification(deletePoint.message)
+                                if IsControlJustPressed(0, 38) then
+                                    deleteVehicleDirect(name, data.type, data.spawnPositions)
                                 end
                             end
                         end

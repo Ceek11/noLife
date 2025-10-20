@@ -11,7 +11,7 @@ function FUN_HANDLE_LOCATIONS(locations)
                 if distance < 10.0 then
                     markerNear = true
                     if data.drawmarker ~= false then
-                        DrawMarker(1, coord.x, coord.y, coord.z - 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0, 150, 255, 200, false, true, 2, false, false, false, false)
+                        DrawCustomMarker(coord.x, coord.y, coord.z)
                     end
                 end
                 if distance < 2.0 then
