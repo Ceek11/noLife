@@ -1,5 +1,15 @@
 [
     {
+        "coords": [
+            {
+                "x": 106.222343,
+                "y": 6606.220703,
+                "z": 31.800541
+            }
+        ],
+        "label": "Location",
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder à la location",
+        "drawmarker": true,
         "spawn_positions": [
             {
                 "w": 79.274071,
@@ -8,80 +18,39 @@
                 "z": 32.015408
             }
         ],
-        "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder à la location",
-        "vehicles_list": [
-            {
-                "model": "tribike",
-                "deposit": 300,
-                "label": "Tribike",
-                "price": 200
-            },
-            {
-                "model": "faggio",
-                "deposit": 700,
-                "label": "Faggio",
-                "price": 500
-            },
-            {
-                "model": "issi2",
-                "deposit": 1000,
-                "label": "Issi",
-                "price": 900
-            }
-        ],
         "name": "location#3",
-        "label": "Location#3",
-        "coords": [
-            {
-                "x": 106.222343,
-                "y": 6606.220703,
-                "z": 31.800541
-            }
-        ],
-        "drawmarker": true
-    },
-    {
-        "spawn_positions": [
-            {
-                "w": 237.513885,
-                "x": -1032.25,
-                "y": -2730.335449,
-                "z": 20.1082
-            }
-        ],
-        "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder à la location",
         "vehicles_list": [
             {
                 "deposit": 300,
-                "label": "Tribike",
                 "model": "tribike",
+                "label": "Tribike",
                 "price": 200
             },
             {
                 "deposit": 700,
-                "label": "Faggio",
                 "model": "faggio",
+                "label": "Faggio",
                 "price": 500
             },
             {
                 "deposit": 1000,
-                "label": "Issi",
                 "model": "issi2",
+                "label": "Issi",
                 "price": 900
             }
-        ],
-        "name": "aeroprt",
-        "label": "Aeroport",
-        "coords": [
-            {
-                "x": -1032.412231,
-                "y": -2735.219238,
-                "z": 20.169271
-            }
-        ],
-        "drawmarker": true
+        ]
     },
     {
+        "coords": [
+            {
+                "x": 633.176453,
+                "y": 2722.81958,
+                "z": 41.870701
+            }
+        ],
+        "label": "Location",
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder à la location",
+        "drawmarker": true,
         "spawn_positions": [
             {
                 "w": 183.447418,
@@ -90,7 +59,48 @@
                 "z": 41.811069
             }
         ],
+        "name": "location#2",
+        "vehicles_list": [
+            {
+                "deposit": 300,
+                "model": "tribike",
+                "label": "Tribike",
+                "price": 200
+            },
+            {
+                "deposit": 700,
+                "model": "faggio",
+                "label": "Faggio",
+                "price": 500
+            },
+            {
+                "deposit": 1000,
+                "model": "issi2",
+                "label": "Issi",
+                "price": 900
+            }
+        ]
+    },
+    {
+        "coords": [
+            {
+                "x": -1032.41,
+                "y": -2735.22,
+                "z": 20.17
+            }
+        ],
+        "label": "Aeroport",
         "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder à la location",
+        "drawmarker": true,
+        "spawn_positions": [
+            {
+                "w": 237.51,
+                "x": -1032.25,
+                "y": -2730.34,
+                "z": 20.11
+            }
+        ],
+        "name": "aeroprt",
         "vehicles_list": [
             {
                 "model": "tribike",
@@ -110,57 +120,47 @@
                 "label": "Issi",
                 "price": 900
             }
-        ],
-        "name": "location#2",
-        "label": "Location#2",
-        "coords": [
-            {
-                "x": 633.176453,
-                "y": 2722.81958,
-                "z": 41.870701
-            }
-        ],
-        "drawmarker": true
+        ]
     },
     {
         "spawn_positions": [
             {
-                "w": 5.793341,
-                "x": -255.832581,
-                "y": -339.205719,
-                "z": 29.845881
+                "w": 5.79,
+                "x": -255.83,
+                "y": -339.21,
+                "z": 29.85
+            }
+        ],
+        "label": "Location",
+        "coords": [
+            {
+                "x": -249.22,
+                "y": -337.7,
+                "z": 29.97
             }
         ],
         "message": "Appuyer sur ~INPUT_CONTEXT~ pour accéder à la location",
+        "drawmarker": true,
+        "name": "location#1",
         "vehicles_list": [
             {
                 "deposit": 300,
-                "label": "Tribike",
                 "model": "tribike",
+                "label": "Tribike",
                 "price": 200
             },
             {
                 "deposit": 700,
-                "label": "Faggio",
                 "model": "faggio",
+                "label": "Faggio",
                 "price": 500
             },
             {
                 "deposit": 1000,
-                "label": "Issi",
                 "model": "issi2",
+                "label": "Issi",
                 "price": 900
             }
-        ],
-        "name": "location#1",
-        "label": "Location#1",
-        "coords": [
-            {
-                "x": -249.220474,
-                "y": -337.697968,
-                "z": 29.967112
-            }
-        ],
-        "drawmarker": true
+        ]
     }
 ]

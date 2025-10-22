@@ -48,6 +48,56 @@ CORE.register_server_callback("fafadev:to_server:create_chest", function(source,
     end
 end)
 
+CORE.register_server_callback("fafadev:to_server:update_chest", function(source, cb, chestData)
+    if not chestData or not chestData.old_name or not chestData.name or not chestData.label or not chestData.coords then
+        cb(false)
+        return
+    end
+    
+    -- Vérifier que l'ancien coffre existe
+    if not TBL_CHESTS[chestData.old_name] then
+        cb(false)
+        return
+    end
+    
+    -- Si le nom a changé, vérifier que le nouveau nom n'existe pas déjà
+    if chestData.old_name ~= chestData.name and TBL_CHESTS[chestData.name] then
+        cb(false)
+        return
+    end
+    
+    -- Supprimer l'ancien coffre s'il a changé de nom
+    if chestData.old_name ~= chestData.name then
+        TBL_CHESTS[chestData.old_name] = nil
+    end
+    
+    -- Mettre à jour le coffre dans la table
+    TBL_CHESTS[chestData.name] = chestData
+    
+    -- Enregistrer le coffre dans ox_inventory
+    exports.ox_inventory:RegisterStash(chestData.name, chestData.label, 100, chestData.options.max_weight or 2000, false)
+    
+    -- Sauvegarder dans le fichier JSON
+    local chestsArray = {}
+    for _, chest in pairs(TBL_CHESTS) do
+        table.insert(chestsArray, chest)
+    end
+    
+    local success = SaveResourceFile(GetCurrentResourceName(), 'data/chests.json', json.encode(chestsArray, {indent = true}), -1)
+    if success then
+        -- Rafraîchir automatiquement les coffres pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_chests", -1, function() end, TBL_CHESTS)
+        cb(true)
+    else
+        -- Annuler les changements en cas d'erreur
+        if chestData.old_name ~= chestData.name then
+            TBL_CHESTS[chestData.old_name] = TBL_CHESTS[chestData.name]
+            TBL_CHESTS[chestData.name] = nil
+        end
+        cb(false)
+    end
+end)
+
 CORE.register_server_callback("fafadev:to_server:delete_chest", function(source, cb, chestName)
     if not chestName or not TBL_CHESTS[chestName] then
         cb(false)

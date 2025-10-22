@@ -1,19 +1,20 @@
 [
     {
+        "gradeAccess": [],
+        "label": "Pole Dance Tequi-La-La",
         "animations": [
             1,
             2,
             3
         ],
-        "drawmarker": true,
-        "label": "Pole Dance Tequi-La-La",
-        "message": "Appuyez sur ~INPUT_CONTEXT~ pour accéder au pole dance",
         "jobAccess": [],
+        "message": "Appuyez sur ~INPUT_CONTEXT~ pour accéder au pole dance",
+        "drawmarker": true,
         "coords": [
             {
-                "y": 276.625,
-                "z": 83.286,
-                "x": -565.171
+                "z": 83.29,
+                "x": -565.17,
+                "y": 276.62
             }
         ]
     }

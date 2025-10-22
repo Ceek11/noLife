@@ -1,18 +1,14 @@
--- Variables pour les sous-menus des peds
 local ped_submenus = {}
 
--- Fonction pour nettoyer les sous-menus obsolètes
 local function CleanupObsoletePedSubmenus(current_peds)
     local current_keys = {}
     
-    -- Collecter les clés actuelles
     if current_peds then
         for index, _ in pairs(current_peds) do
             table.insert(current_keys, "ped_" .. index)
         end
     end
     
-    -- Supprimer les sous-menus qui n'existent plus
     for key, submenu in pairs(ped_submenus) do
         local exists = false
         for _, current_key in pairs(current_keys) do
@@ -29,21 +25,7 @@ end
 
 function peds_builder(pedsData)
     local TBL_PEDS = pedsData or {}
-    local CONFIG_PEDS = {
-        scenario_list = {"WORLD_HUMAN_SMOKING", "WORLD_HUMAN_STAND_MOBILE", "WORLD_HUMAN_GUARD_STAND"},
-        anim_list = {
-            idle = "idle",
-            smoking = "WORLD_HUMAN_SMOKING",
-            mobile = "WORLD_HUMAN_STAND_MOBILE"
-        },
-        behavior_list = {
-            {id = "guard", label = "Garde", description = "Comportement de garde"},
-            {id = "civilian", label = "Civil", description = "Comportement civil"},
-            {id = "worker", label = "Travailleur", description = "Comportement de travailleur"}
-        }
-    }
     
-    -- Nettoyer les sous-menus obsolètes
     CleanupObsoletePedSubmenus(TBL_PEDS)
     
     RageUI.IsVisible(sub_menus_admin["peds"], function()
@@ -132,7 +114,6 @@ function peds_builder(pedsData)
         })
         RageUI.Line()
         
-        -- Affichage des peds avec sous-menus
         for index, ped in pairs(TBL_PEDS) do 
             local label = string.format("%s (%d positions)", ped.ped_model, #ped.ped_coords)
             local behaviorLabel = ped.behavior or "Défaut"
@@ -147,29 +128,25 @@ function peds_builder(pedsData)
             local info = string.format("Scénario: %s | Comportement: %s", ped.scenario or "Aléatoire", behaviorLabel)
             local submenu_key = "ped_" .. index
             
-            -- Créer le sous-menu s'il n'existe pas
             if not ped_submenus[submenu_key] then
                 ped_submenus[submenu_key] = RageUI.CreateSubMenu(sub_menus_admin["peds"], label, "Gestion du ped")
             else
-                -- Mettre à jour le titre du sous-menu si le label a changé
                 ped_submenus[submenu_key].Title = label
             end
             
             RageUI.Button(label, info, {RightLabel = "→→→"}, true, {
                 onSelected = function()
-                    -- Pas besoin d'action, le sous-menu s'ouvre automatiquement
                 end
             }, ped_submenus[submenu_key])
         end
     end)
     
-    -- Gestion des sous-menus individuels des peds
     for submenu_key, submenu in pairs(ped_submenus) do
         RageUI.IsVisible(submenu, function()
             local ped_index_str = string.gsub(submenu_key, "ped_", "")
             local ped_index = tonumber(ped_index_str)
             if not ped_index then
-                return -- Ignorer si l'index n'est pas valide
+                return
             end
             local ped_data = TBL_PEDS[ped_index]
             
@@ -178,11 +155,10 @@ function peds_builder(pedsData)
                 
                 RageUI.Separator("~b~" .. ped_label .. "~s~")
                 
-                -- Téléportation
                 RageUI.Button("Se téléporter au ped", "Se téléporter aux coordonnées du ped", {RightLabel = "→→→"}, true, {
                     onSelected = function()
                         if ped_data.ped_coords and #ped_data.ped_coords > 0 then
-                            local coords = ped_data.ped_coords[1] -- Prendre la première coordonnée
+                            local coords = ped_data.ped_coords[1]
                             SetEntityCoords(PlayerPedId(), coords.x, coords.y, coords.z, false, false, false, true)
                             ESX.ShowNotification('Téléportation effectuée !')
                         else
@@ -191,7 +167,6 @@ function peds_builder(pedsData)
                     end
                 })
                 
-                -- Modification
                 RageUI.Button("Modifier les informations", "Modifier les paramètres du ped", {RightLabel = "→→→"}, true, {
                     onSelected = function()
                         local coordsString = ""
@@ -271,7 +246,6 @@ function peds_builder(pedsData)
                                     CORE.trigger_server_callback("fafadev:to_server:get_peds", function(peds)
                                         TBL_PEDS = peds
                                         FUN_HANDLE_PEDS(peds)
-                                        -- Mettre à jour le titre du sous-menu
                                         if ped_submenus[submenu_key] then
                                             ped_submenus[submenu_key].Title = string.format("%s (%d positions)", pedData.ped_model, #pedData.ped_coords)
                                         end
@@ -284,7 +258,6 @@ function peds_builder(pedsData)
                     end
                 })
                 
-                -- Suppression
                 RageUI.Button("Supprimer le ped", "Supprimer définitivement ce ped", {RightLabel = "~r~Supprimer~s~"}, true, {
                     onSelected = function()
                         local confirm = lib.alertDialog({

@@ -1,30 +1,30 @@
 {
     "sell": [
         {
-            "drawmarker": true,
+            "old_name": "PDM",
+            "jobAccess": [
+                "cardealer"
+            ],
+            "spawnPositions": [
+                {
+                    "z": 26.08,
+                    "heading": 0.0,
+                    "x": -70.68,
+                    "y": -1105.81
+                }
+            ],
+            "name": "PDM",
             "categories": [
                 "super",
                 "compacts",
                 "sports"
             ],
-            "spawnPositions": [
-                {
-                    "x": -70.68,
-                    "z": 26.08,
-                    "heading": 0.0,
-                    "y": -1105.81
-                }
-            ],
             "message": "Véhicule de luxe - Performance exceptionnelle",
-            "name": "PDM",
-            "jobAccess": [
-                "cardealer"
-            ],
-            "old_name": "cardealer",
+            "drawmarker": true,
             "coords": [
                 {
-                    "x": -63.5,
                     "z": 26.25,
+                    "x": -63.5,
                     "y": -1106.25
                 }
             ]
@@ -32,37 +32,37 @@
     ],
     "preview": [
         {
-            "drawmarker": true,
+            "old_name": "PMD",
             "categories": [
                 "super",
                 "compacts",
                 "sports"
             ],
+            "message": "Prévisualisation - Supercar sportive",
             "coords": [
                 {
-                    "x": -65.79,
                     "z": 25.42,
+                    "x": -65.79,
                     "y": -1096.63
                 }
             ],
-            "old_name": "cardealer",
-            "testZoneRadius": 500,
-            "message": "Prévisualisation - Supercar sportive",
-            "name": "PMD",
-            "testPoint": {
-                "x": -1032.0,
-                "z": 13.75,
-                "heading": 330.0,
-                "y": -2730.0
-            },
             "spawnPositions": [
                 {
-                    "x": -50.0,
                     "z": 25.0,
                     "heading": 0.0,
+                    "x": -50.0,
                     "y": -1100.0
                 }
-            ]
+            ],
+            "name": "PMD",
+            "testZoneRadius": 500,
+            "drawmarker": true,
+            "testPoint": {
+                "z": 13.75,
+                "heading": 330.0,
+                "x": -1032.0,
+                "y": -2730.0
+            }
         }
     ]
 }

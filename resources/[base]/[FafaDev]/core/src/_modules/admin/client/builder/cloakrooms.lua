@@ -101,6 +101,8 @@ function cloakrooms_builder(cloakroomsData)
             
             RageUI.Button(label, info, {RightLabel = "→→→"}, true, {
                 onSelected = function()
+                    print("^4[DEBUG] Bouton cliqué:", label)
+                    print("^4[DEBUG] Sous-menu associé:", submenu_key)
                     -- Pas besoin d'action, le sous-menu s'ouvre automatiquement
                 end
             }, cloakroom_submenus[submenu_key])
@@ -110,10 +112,18 @@ function cloakrooms_builder(cloakroomsData)
     -- Gestion des sous-menus individuels des cloakrooms
     for submenu_key, submenu in pairs(cloakroom_submenus) do
         RageUI.IsVisible(submenu, function()
-            local cloakroom_name = string.gsub(submenu_key, "cloakroom_", "")
+            print("^3[DEBUG] Sous-menu ouvert:", submenu_key)
+            local cloakroom_name = string.gsub(submenu_key, "^cloakroom_", "")
+            print("^3[DEBUG] Nom extrait:", cloakroom_name)
+            print("^3[DEBUG] Clés disponibles dans TBL_CLOAKROOMS:")
+            for k, v in pairs(TBL_CLOAKROOMS) do
+                print("^3[DEBUG] -", k)
+            end
             local cloakroom_data = TBL_CLOAKROOMS[cloakroom_name]
+            print("^3[DEBUG] Données trouvées:", cloakroom_data ~= nil)
             
             if cloakroom_data then
+                print("^3[DEBUG] Affichage des boutons...")
                 local cloakroom_label = cloakroom_data.label or cloakroom_name
                 
                 RageUI.Separator("~b~" .. cloakroom_label .. "~s~")

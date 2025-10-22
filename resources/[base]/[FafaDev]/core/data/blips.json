@@ -1,1372 +1,1372 @@
 {
-    "ClassicBlips": [
-        {
-            "Job": "ALL",
-            "Job2": "ALL",
-            "Label": "[Service] | Garage publique",
-            "Y": -810.02,
-            "Z": 30.73,
-            "Id": 50,
-            "X": 215.64,
-            "Area": false,
-            "AColor": 0,
-            "BColor": 29,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage publique",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -2028.5186,
-            "Area": false,
-            "Z": 11.4669,
-            "Y": -463.5722,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage publique",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -283.4634,
-            "Area": false,
-            "Z": 31.0806,
-            "Y": -887.1519,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage publique",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -899.4296,
-            "Area": false,
-            "Z": 41.8843,
-            "Y": -153.6452,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage publique",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 890.5697,
-            "Area": false,
-            "Z": 78.765,
-            "Y": -0.9808,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage publique",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1737.6573,
-            "Area": false,
-            "Z": 34.1368,
-            "Y": 3709.7405,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage publique",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 105.2881,
-            "Area": false,
-            "Z": 32.3975,
-            "Y": 6613.6035,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage publique",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -821.2313,
-            "Area": false,
-            "Z": 5.1,
-            "Y": -1309.449,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 410.2064,
-            "Area": false,
-            "Z": 29.2919,
-            "Y": -1624.1772,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1657.5063,
-            "Area": false,
-            "Z": 35.1698,
-            "Y": 3800.1311,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière",
-            "Id": 50,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -236.8613,
-            "Area": false,
-            "Z": 31.9391,
-            "Y": 6201.9468,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage bateau",
-            "Id": 356,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -721.1921,
-            "Area": false,
-            "Z": 1.5963,
-            "Y": -1324.5892,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage bateau",
-            "Id": 356,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -278.8186,
-            "Area": false,
-            "Z": 6.4984,
-            "Y": 6621.0503,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage bateau",
-            "Id": 356,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 5116.0181,
-            "Area": false,
-            "Z": 0.4056,
-            "Y": -4639.6138,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière Bateau",
-            "Id": 356,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1004.7639,
-            "Area": false,
-            "Z": 0.5954,
-            "Y": -1400.7677,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1621.6785,
-            "Area": false,
-            "Z": 13.9918,
-            "Y": -3152.7683,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1726.69,
-            "Area": false,
-            "Z": 41.22,
-            "Y": 3294.86,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 2136.9451,
-            "Area": false,
-            "Z": 40.9703,
-            "Y": 4791.8018,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[Service] | Garage avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 4437.8599,
-            "Area": false,
-            "Z": 4.3112,
-            "Y": -4482.4097,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière Avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1242.5199,
-            "Area": false,
-            "Z": 13.9401,
-            "Y": -3392.897,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière Avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1725.9481,
-            "Area": false,
-            "Z": 41.1875,
-            "Y": 3290.3716,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière Avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 2114.1042,
-            "Area": false,
-            "Z": 41.3555,
-            "Y": 4785.3457,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 47,
-            "Label": "[Service] | Fourrière Avion",
-            "Id": 359,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 4459.3579,
-            "Area": false,
-            "Z": 4.2442,
-            "Y": -4469.3433,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -48.935459,
-            "Area": false,
-            "Z": 29.420996,
-            "Y": -1757.029175,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 25.854481,
-            "Area": false,
-            "Z": 29.497025,
-            "Y": -1346.43689,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1136.224976,
-            "Area": false,
-            "Z": 46.415806,
-            "Y": -981.648071,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1163.386963,
-            "Area": false,
-            "Z": 69.205055,
-            "Y": -322.273254,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -707.408447,
-            "Area": false,
-            "Z": 19.215588,
-            "Y": -913.313599,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1222.293823,
-            "Area": false,
-            "Z": 12.326345,
-            "Y": -906.769653,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 2556.006592,
-            "Area": false,
-            "Z": 108.622948,
-            "Y": 382.130707,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 374.179626,
-            "Area": false,
-            "Z": 103.566368,
-            "Y": 327.688446,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1821.290039,
-            "Area": false,
-            "Z": 138.114761,
-            "Y": 793.56488,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -3040.87085,
-            "Area": false,
-            "Z": 7.908929,
-            "Y": 585.263245,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -2967.852295,
-            "Area": false,
-            "Z": 15.043313,
-            "Y": 391.33667,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1960.240112,
-            "Area": false,
-            "Z": 32.343735,
-            "Y": 3742.133301,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1391.780518,
-            "Area": false,
-            "Z": 34.980888,
-            "Y": 3604.651367,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 2677.297852,
-            "Area": false,
-            "Z": 55.241127,
-            "Y": 3281.281738,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 547.982422,
-            "Area": false,
-            "Z": 42.156494,
-            "Y": 2669.784912,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1165.76416,
-            "Area": false,
-            "Z": 38.157665,
-            "Y": 2709.358643,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1698.893188,
-            "Area": false,
-            "Z": 42.063675,
-            "Y": 4923.900879,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 69,
-            "Label": "[Magasin] | Supérette",
-            "Id": 59,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1729.646118,
-            "Area": false,
-            "Z": 35.037228,
-            "Y": 6415.960449,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 3,
-            "Label": "Location",
-            "Id": 811,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1032.626709,
-            "Area": false,
-            "Z": 20.169266,
-            "Y": -2735.276855,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 3,
-            "Label": "Location",
-            "Id": 811,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -249.191589,
-            "Area": false,
-            "Z": 29.967173,
-            "Y": -337.616364,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 3,
-            "Label": "Location",
-            "Id": 811,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 105.095398,
-            "Area": false,
-            "Z": 31.898355,
-            "Y": 6606.248535,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 3,
-            "Label": "Location",
-            "Id": 811,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 633.558167,
-            "Area": false,
-            "Z": 41.869778,
-            "Y": 2722.974365,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 4,
-            "Label": "[~o~Magasin~s~] | Auto-Ecole",
-            "Id": 535,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 228.55,
-            "Area": false,
-            "Z": 105.11,
-            "Y": 374.62,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 0,
-            "Label": "[~b~Gouvernement~s~] | Gouvernement",
-            "Id": 419,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -549.16,
-            "Area": false,
-            "Z": 38.22,
-            "Y": -199.14,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 29,
-            "Label": "[~g~Service Public~s~] | L.S.P.D",
-            "Id": 60,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -400.8175,
-            "Area": false,
-            "Z": 32.398,
-            "Y": -340.1407,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 5,
-            "Label": "[~g~Service Public~s~] | L.S.S.D",
-            "Id": 60,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1827.2637,
-            "Area": false,
-            "Z": 34.4048,
-            "Y": 3670.0945,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 1,
-            "Label": "[~g~Service Public~s~] | L.S.M.C",
-            "Id": 61,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 305.2508,
-            "Area": false,
-            "Z": 43.2841,
-            "Y": -586.8919,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 1,
-            "Label": "[~g~Service Public~s~] | S.S.M.C",
-            "Id": 61,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 1673.3688,
-            "Area": false,
-            "Z": 35.3381,
-            "Y": 3651.7417,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 3,
-            "Label": "[Activités] | Fête foraine",
-            "Id": 266,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1556.6412,
-            "Area": false,
-            "Z": 13.0179,
-            "Y": -1016.525,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 0,
-            "Label": "[~o~Magasin~s~] | Animalerie",
-            "Id": 273,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 562.34,
-            "Area": false,
-            "Z": 42.26,
-            "Y": 2737.95,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 60,
-            "Label": "[Activités] | Saut en parachute",
-            "Id": 94,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 424.23,
-            "Area": false,
-            "Z": 766.62,
-            "Y": 5614.0,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 0,
-            "Label": "[Magasin] | Pharmacie",
-            "Id": 51,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 318.0259,
-            "Area": false,
-            "Z": 29.4786,
-            "Y": -1077.0853,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 0,
-            "Label": "[Magasin] | Pharmacie",
-            "Id": 51,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1257.3381,
-            "Area": false,
-            "Z": 4.3739,
-            "Y": -1437.5609,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 2,
-            "Label": "[~p~Restauration~s~] | Burger'Shot",
-            "Id": 106,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1178.03,
-            "Area": false,
-            "Z": 13.77,
-            "Y": -891.32,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 2,
-            "Label": "[~p~Restauration~s~] | Pizzeria",
-            "Id": 267,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 93.0719,
-            "Area": false,
-            "Z": 68.5921,
-            "Y": 8.364,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 3,
-            "Label": "[~p~Restauration~s~] | Hookies",
-            "Id": 96,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -2189.0083,
-            "Area": false,
-            "Z": 49.1765,
-            "Y": 4290.7095,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 7,
-            "Label": "[~p~Restauration~s~] | Glacier",
-            "Id": 280,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1192.0201,
-            "Area": false,
-            "Z": 4.3699,
-            "Y": -1541.8112,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 13,
-            "Label": "[~p~Restauration~s~] | Sushi Bar",
-            "Id": 120,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 209.5813,
-            "Area": false,
-            "Z": 54.6136,
-            "Y": -186.0714,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 2,
-            "Label": "[~p~Restauration~s~] | Coffee-Shop",
-            "Id": 89,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -1277.1924,
-            "Area": false,
-            "Z": 7.7455,
-            "Y": -1132.4489,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 49,
-            "Label": "[Activités] | Chasseur",
-            "Id": 480,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 763.5386,
-            "Area": false,
-            "Z": 39.5999,
-            "Y": 4175.4712,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 28,
-            "Label": "[~o~Magasin~s~] | Bijouterie",
-            "Id": 439,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": -627.8388,
-            "Area": false,
-            "Z": 37.057,
-            "Y": -233.5786,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "BColor": 5,
-            "Label": "[~o~Magasin~s~] | Grossiste Ventes",
-            "Id": 318,
-            "Job2": "ALL",
-            "AColor": 0,
-            "X": 2712.3772,
-            "Area": false,
-            "Z": 57.0529,
-            "Y": 3399.9648,
-            "ASize": 0.0,
-            "BSize": 0.8
-        },
-        {
-            "Job": "ALL",
-            "Id": 318,
-            "Label": "[~o~Magasin~s~] | Grossiste Achats",
-            "Job2": "ALL",
-            "BColor": 5,
-            "AColor": 0,
-            "X": 29.5431,
-            "Z": 29.6074,
-            "Y": -1770.187,
-            "BSize": 0.8,
-            "ASize": 0.0,
-            "Area": false
-        }
-    ],
     "Blips": {
         "Entreprise": [
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 139.8339,
-                    "y": 2059.645,
-                    "x": -1925.1185
+                    "x": -1925.1185,
+                    "y": 2059.645
                 },
                 "name": "[Service] | Garage Vigne",
-                "job": "vigne"
+                "id": 50,
+                "job": "vigne",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 29.2023,
-                    "y": -1324.9705,
-                    "x": 130.2265
+                    "x": 130.2265,
+                    "y": -1324.9705
                 },
                 "name": "[Service] | Garage Unicorn",
-                "job": "unicorn"
+                "id": 50,
+                "job": "unicorn",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 54.6372,
-                    "y": -220.8084,
-                    "x": 87.0122
+                    "x": 87.0122,
+                    "y": -220.8084
                 },
                 "name": "[Service] | Garage Ltd18",
-                "job": "ltd18"
+                "id": 50,
+                "job": "ltd18",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 69.2144,
-                    "y": 12.7456,
-                    "x": 67.8004
+                    "x": 67.8004,
+                    "y": 12.7456
                 },
                 "name": "[Service] | Garage Pizzeria",
-                "job": "pizzeria"
+                "id": 50,
+                "job": "pizzeria",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 42.0182,
-                    "y": 2801.2051,
-                    "x": 568.9415
+                    "x": 568.9415,
+                    "y": 2801.2051
                 },
                 "name": "[Service] | Garage Animal",
-                "job": "animal"
+                "id": 50,
+                "job": "animal",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 4.3639,
-                    "y": -1551.5353,
-                    "x": -1188.9233
+                    "x": -1188.9233,
+                    "y": -1551.5353
                 },
                 "name": "[Service] | Garage Glacier",
-                "job": "glacier"
+                "id": 50,
+                "job": "glacier",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 57.9224,
-                    "y": -171.8494,
-                    "x": 212.2493
+                    "x": 212.2493,
+                    "y": -171.8494
                 },
                 "name": "[Service] | Garage Chinois",
-                "job": "chinois"
+                "id": 50,
+                "job": "chinois",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 103.6446,
-                    "y": 301.1417,
-                    "x": 358.9672
+                    "x": 358.9672,
+                    "y": 301.1417
                 },
                 "name": "[Service] | Garage Galaxy",
-                "job": "galaxy"
+                "id": 50,
+                "job": "galaxy",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 29.197,
-                    "y": -1164.0093,
-                    "x": 268.1547
+                    "x": 268.1547,
+                    "y": -1164.0093
                 },
                 "name": "[Service] | Garage Motodealer",
-                "job": "motodealer"
+                "id": 50,
+                "job": "motodealer",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 48.9878,
-                    "y": 4264.7109,
-                    "x": -2185.1387
+                    "x": -2185.1387,
+                    "y": 4264.7109
                 },
                 "name": "[Service] | Garage Hookies",
-                "job": "hookies"
+                "id": 50,
+                "job": "hookies",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 10.195,
-                    "y": -815.2209,
-                    "x": -1645.8429
+                    "x": -1645.8429,
+                    "y": -815.2209
                 },
                 "name": "[Service] | Garage Karting",
-                "job": "karting"
+                "id": 50,
+                "job": "karting",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 73.721,
-                    "y": -183.8213,
-                    "x": 894.1909
+                    "x": 894.1909,
+                    "y": -183.8213
                 },
                 "name": "[Service] | Garage Taxi",
-                "job": "taxi"
+                "id": 50,
+                "job": "taxi",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 22.3525,
-                    "y": -935.2782,
-                    "x": -613.7797
+                    "x": -613.7797,
+                    "y": -935.2782
                 },
                 "name": "[Service] | Garage Journaliste",
-                "job": "journaliste"
+                "id": 50,
+                "job": "journaliste",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 29.2917,
-                    "y": -832.7062,
-                    "x": 371.4532
+                    "x": 371.4532,
+                    "y": -832.7062
                 },
                 "name": "[Service] | Garage Weeder",
-                "job": "weeder"
+                "id": 50,
+                "job": "weeder",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 29.2931,
-                    "y": -2141.6199,
-                    "x": 816.9923
+                    "x": 816.9923,
+                    "y": -2141.6199
                 },
                 "name": "[Service] | Garage Ammu-Nation",
-                "job": "ammu"
+                "id": 50,
+                "job": "ammu",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 28.5925,
-                    "y": -1781.9344,
-                    "x": 451.0634
+                    "x": 451.0634,
+                    "y": -1781.9344
                 },
                 "name": "[Service] | Garage Nails",
-                "job": "nails"
+                "id": 50,
+                "job": "nails",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 26.6716,
-                    "y": -1090.7496,
-                    "x": -8.7951
+                    "x": -8.7951,
+                    "y": -1090.7496
                 },
                 "name": "[Service] | Garage Concessionnaire",
-                "job": "cardealer"
+                "id": 50,
+                "job": "cardealer",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 7.0316,
-                    "y": -3004.3894,
-                    "x": 156.2536
+                    "x": 156.2536,
+                    "y": -3004.3894
                 },
                 "name": "[Service] | Garage Mécanicien",
-                "job": "mechanic"
+                "id": 50,
+                "job": "mechanic",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 38.2351,
-                    "y": -169.9626,
-                    "x": -562.3882
+                    "x": -562.3882,
+                    "y": -169.9626
                 },
                 "name": "[Service] | Garage Gouvernement",
-                "job": "gouv"
+                "id": 50,
+                "job": "gouv",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 49.9262,
-                    "y": 3987.0857,
-                    "x": 185.6463
+                    "x": 185.6463,
+                    "y": 3987.0857
                 },
                 "name": "[Service] | Garage AlamoBar",
-                "job": "alamobar"
+                "id": 50,
+                "job": "alamobar",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 60.6755,
-                    "y": 174.7631,
-                    "x": -1625.6924
+                    "x": -1625.6924,
+                    "y": 174.7631
                 },
                 "name": "[Service] | Garage Justice",
-                "job": "justice"
+                "id": 50,
+                "job": "justice",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 85.8214,
-                    "y": 246.0832,
-                    "x": -751.8309
+                    "x": -751.8309,
+                    "y": 246.0832
                 },
                 "name": "[Service] | Garage Agent Immobilier",
-                "job": "realestateagent"
+                "id": 50,
+                "job": "realestateagent",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 31.5921,
-                    "y": -1371.1033,
-                    "x": -327.2434
+                    "x": -327.2434,
+                    "y": -1371.1033
                 },
                 "name": "[Service] | Crusin Craftsmen",
-                "job": "ccm"
+                "id": 50,
+                "job": "ccm",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 38.3888,
-                    "y": 2653.0547,
-                    "x": 1201.7415
+                    "x": 1201.7415,
+                    "y": 2653.0547
                 },
                 "name": "[Service] | Garage Harmony",
-                "job": "harmony"
+                "id": 50,
+                "job": "harmony",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 10.4135,
-                    "y": -737.6346,
-                    "x": -1735.475
+                    "x": -1735.475,
+                    "y": -737.6346
                 },
                 "name": "[Service] | Garage Asgard",
-                "job": "asgard"
+                "id": 50,
+                "job": "asgard",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 31.4252,
-                    "y": 6441.4077,
-                    "x": 30.1804
+                    "x": 30.1804,
+                    "y": 6441.4077
                 },
                 "name": "[Service] | Garage Fayes",
-                "job": "fayes"
+                "id": 50,
+                "job": "fayes",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 34.0305,
-                    "y": 3699.2019,
-                    "x": 1865.4794
+                    "x": 1865.4794,
+                    "y": 3699.2019
                 },
                 "name": "[Service] | Garage Sheriff",
-                "job": "sheriff"
+                "id": 50,
+                "job": "sheriff",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 25.0952,
-                    "y": -349.0058,
-                    "x": -386.6494
+                    "x": -386.6494,
+                    "y": -349.0058
                 },
                 "name": "[Service] | Garage Police",
-                "job": "police"
+                "id": 50,
+                "job": "police",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 28.7969,
-                    "y": -591.4955,
-                    "x": 334.7097
+                    "x": 334.7097,
+                    "y": -591.4955
                 },
                 "name": "[Service] | Garage Ambulance Sud",
-                "job": "ambulance_sud"
+                "id": 50,
+                "job": "ambulance_sud",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 28.6738,
-                    "y": -635.5263,
-                    "x": -1413.2706
+                    "x": -1413.2706,
+                    "y": -635.5263
                 },
                 "name": "[Service] | Garage Bahamas",
-                "job": "bahamas"
+                "id": 50,
+                "job": "bahamas",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 83.069,
-                    "y": 298.1216,
-                    "x": -564.8073
+                    "x": -564.8073,
+                    "y": 298.1216
                 },
                 "name": "[Service] | Garage Tequi-La-La",
-                "job": "tequillala"
+                "id": 50,
+                "job": "tequillala",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 12.487,
-                    "y": 997.1315,
-                    "x": -3250.2646
+                    "x": -3250.2646,
+                    "y": 997.1315
                 },
                 "name": "[Service] | Garage 24/7 Chumash",
-                "job": "ltd6"
+                "id": 50,
+                "job": "ltd6",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 32.3478,
-                    "y": 3742.7771,
-                    "x": 1970.6057
+                    "x": 1970.6057,
+                    "y": 3742.7771
                 },
                 "name": "[Service] | Garage 24/7 Sandy Shores",
-                "job": "ltd7"
+                "id": 50,
+                "job": "ltd7",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 19.2148,
-                    "y": -917.2173,
-                    "x": -720.225
+                    "x": -720.225,
+                    "y": -917.2173
                 },
                 "name": "[Service] | Garage LTD Little Seoul",
-                "job": "ltd1"
+                "id": 50,
+                "job": "ltd1",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 42.1709,
-                    "y": 2656.834,
-                    "x": 542.6592
+                    "x": 542.6592,
+                    "y": 2656.834
                 },
                 "name": "[Service] | Garage LTD 24/7 Route 68",
-                "job": "ltd16"
+                "id": 50,
+                "job": "ltd16",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 13.831,
-                    "y": -890.0994,
-                    "x": -1176.2325
+                    "x": -1176.2325,
+                    "y": -890.0994
                 },
                 "name": "[Service] | Garage Burger Shot",
-                "job": "burgershot"
+                "id": 50,
+                "job": "burgershot",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 13.9453,
-                    "y": -2936.666,
-                    "x": -947.6532
+                    "x": -947.6532,
+                    "y": -2936.666
                 },
                 "name": "[Service] | Garage Avions",
-                "job": "planedealer"
+                "id": 50,
+                "job": "planedealer",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 5.1505,
-                    "y": -1342.6669,
-                    "x": -787.5529
+                    "x": -787.5529,
+                    "y": -1342.6669
                 },
                 "name": "[Service] | Garage Bateaux",
-                "job": "boatdealer"
+                "id": 50,
+                "job": "boatdealer",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 50,
                 "pos": {
                     "z": 35.336,
-                    "y": 3665.1887,
-                    "x": 1650.557
+                    "x": 1650.557,
+                    "y": 3665.1887
                 },
                 "name": "[Service] | Garage Ambulance Nord",
-                "job": "ambulance_nord"
+                "id": 50,
+                "job": "ambulance_nord",
+                "color": 38
             },
             {
-                "color": 38,
-                "id": 359,
                 "pos": {
                     "z": 49.6179,
-                    "y": 4092.9175,
-                    "x": 267.4231
+                    "x": 267.4231,
+                    "y": 4092.9175
                 },
                 "name": "[Service] | Garage AlamoBar Aerial",
-                "job": "alamobar"
+                "id": 359,
+                "job": "alamobar",
+                "color": 38
             }
         ]
-    }
+    },
+    "ClassicBlips": [
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 215.64,
+            "Y": -810.02,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "Z": 30.73,
+            "ASize": 0.0
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -2028.5186,
+            "Y": -463.5722,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 11.4669
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -283.4634,
+            "Y": -887.1519,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 31.0806
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -899.4296,
+            "Y": -153.6452,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 41.8843
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 890.5697,
+            "Y": -0.9808,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 78.765
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1737.6573,
+            "Y": 3709.7405,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 34.1368
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 105.2881,
+            "Y": 6613.6035,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 32.3975
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -821.2313,
+            "Y": -1309.449,
+            "BColor": 29,
+            "Label": "[Service] | Garage publique",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 5.1
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 410.2064,
+            "Y": -1624.1772,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 29.2919
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1657.5063,
+            "Y": 3800.1311,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 35.1698
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -236.8613,
+            "Y": 6201.9468,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière",
+            "AColor": 0,
+            "Id": 50,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 31.9391
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -721.1921,
+            "Y": -1324.5892,
+            "BColor": 29,
+            "Label": "[Service] | Garage bateau",
+            "AColor": 0,
+            "Id": 356,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 1.5963
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -278.8186,
+            "Y": 6621.0503,
+            "BColor": 29,
+            "Label": "[Service] | Garage bateau",
+            "AColor": 0,
+            "Id": 356,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 6.4984
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 5116.0181,
+            "Y": -4639.6138,
+            "BColor": 29,
+            "Label": "[Service] | Garage bateau",
+            "AColor": 0,
+            "Id": 356,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 0.4056
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1004.7639,
+            "Y": -1400.7677,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière Bateau",
+            "AColor": 0,
+            "Id": 356,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 0.5954
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1621.6785,
+            "Y": -3152.7683,
+            "BColor": 29,
+            "Label": "[Service] | Garage avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 13.9918
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1726.69,
+            "Y": 3294.86,
+            "BColor": 29,
+            "Label": "[Service] | Garage avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 41.22
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 2136.9451,
+            "Y": 4791.8018,
+            "BColor": 29,
+            "Label": "[Service] | Garage avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 40.9703
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 4437.8599,
+            "Y": -4482.4097,
+            "BColor": 29,
+            "Label": "[Service] | Garage avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 4.3112
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1242.5199,
+            "Y": -3392.897,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière Avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 13.9401
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1725.9481,
+            "Y": 3290.3716,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière Avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 41.1875
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 2114.1042,
+            "Y": 4785.3457,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière Avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 41.3555
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 4459.3579,
+            "Y": -4469.3433,
+            "BColor": 47,
+            "Label": "[Service] | Fourrière Avion",
+            "AColor": 0,
+            "Id": 359,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 4.2442
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -48.935459,
+            "Y": -1757.029175,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 29.420996
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 25.854481,
+            "Y": -1346.43689,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 29.497025
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1136.224976,
+            "Y": -981.648071,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 46.415806
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1163.386963,
+            "Y": -322.273254,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 69.205055
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -707.408447,
+            "Y": -913.313599,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 19.215588
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1222.293823,
+            "Y": -906.769653,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 12.326345
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 2556.006592,
+            "Y": 382.130707,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 108.622948
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 374.179626,
+            "Y": 327.688446,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 103.566368
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1821.290039,
+            "Y": 793.56488,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 138.114761
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -3040.87085,
+            "Y": 585.263245,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 7.908929
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -2967.852295,
+            "Y": 391.33667,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 15.043313
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1960.240112,
+            "Y": 3742.133301,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 32.343735
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1391.780518,
+            "Y": 3604.651367,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 34.980888
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 2677.297852,
+            "Y": 3281.281738,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 55.241127
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 547.982422,
+            "Y": 2669.784912,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 42.156494
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1165.76416,
+            "Y": 2709.358643,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 38.157665
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1698.893188,
+            "Y": 4923.900879,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 42.063675
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1729.646118,
+            "Y": 6415.960449,
+            "BColor": 69,
+            "Label": "[Magasin] | Supérette",
+            "AColor": 0,
+            "Id": 59,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 35.037228
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1032.626709,
+            "Y": -2735.276855,
+            "BColor": 3,
+            "Label": "Location",
+            "AColor": 0,
+            "Id": 811,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 20.169266
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -249.191589,
+            "Y": -337.616364,
+            "BColor": 3,
+            "Label": "Location",
+            "AColor": 0,
+            "Id": 811,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 29.967173
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 105.095398,
+            "Y": 6606.248535,
+            "BColor": 3,
+            "Label": "Location",
+            "AColor": 0,
+            "Id": 811,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 31.898355
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 633.558167,
+            "Y": 2722.974365,
+            "BColor": 3,
+            "Label": "Location",
+            "AColor": 0,
+            "Id": 811,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 41.869778
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 228.55,
+            "Y": 374.62,
+            "BColor": 4,
+            "Label": "[~o~Magasin~s~] | Auto-Ecole",
+            "AColor": 0,
+            "Id": 535,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 105.11
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -549.16,
+            "Y": -199.14,
+            "BColor": 0,
+            "Label": "[~b~Gouvernement~s~] | Gouvernement",
+            "AColor": 0,
+            "Id": 419,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 38.22
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -400.8175,
+            "Y": -340.1407,
+            "BColor": 29,
+            "Label": "[~g~Service Public~s~] | L.S.P.D",
+            "AColor": 0,
+            "Id": 60,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 32.398
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1827.2637,
+            "Y": 3670.0945,
+            "BColor": 5,
+            "Label": "[~g~Service Public~s~] | L.S.S.D",
+            "AColor": 0,
+            "Id": 60,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 34.4048
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 305.2508,
+            "Y": -586.8919,
+            "BColor": 1,
+            "Label": "[~g~Service Public~s~] | L.S.M.C",
+            "AColor": 0,
+            "Id": 61,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 43.2841
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 1673.3688,
+            "Y": 3651.7417,
+            "BColor": 1,
+            "Label": "[~g~Service Public~s~] | S.S.M.C",
+            "AColor": 0,
+            "Id": 61,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 35.3381
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1556.6412,
+            "Y": -1016.525,
+            "BColor": 3,
+            "Label": "[Activités] | Fête foraine",
+            "AColor": 0,
+            "Id": 266,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 13.0179
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 562.34,
+            "Y": 2737.95,
+            "BColor": 0,
+            "Label": "[~o~Magasin~s~] | Animalerie",
+            "AColor": 0,
+            "Id": 273,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 42.26
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 424.23,
+            "Y": 5614.0,
+            "BColor": 60,
+            "Label": "[Activités] | Saut en parachute",
+            "AColor": 0,
+            "Id": 94,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 766.62
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 318.0259,
+            "Y": -1077.0853,
+            "BColor": 0,
+            "Label": "[Magasin] | Pharmacie",
+            "AColor": 0,
+            "Id": 51,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 29.4786
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1257.3381,
+            "Y": -1437.5609,
+            "BColor": 0,
+            "Label": "[Magasin] | Pharmacie",
+            "AColor": 0,
+            "Id": 51,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 4.3739
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1178.03,
+            "Y": -891.32,
+            "BColor": 2,
+            "Label": "[~p~Restauration~s~] | Burger'Shot",
+            "AColor": 0,
+            "Id": 106,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 13.77
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 93.0719,
+            "Y": 8.364,
+            "BColor": 2,
+            "Label": "[~p~Restauration~s~] | Pizzeria",
+            "AColor": 0,
+            "Id": 267,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 68.5921
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -2189.0083,
+            "Y": 4290.7095,
+            "BColor": 3,
+            "Label": "[~p~Restauration~s~] | Hookies",
+            "AColor": 0,
+            "Id": 96,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 49.1765
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1192.0201,
+            "Y": -1541.8112,
+            "BColor": 7,
+            "Label": "[~p~Restauration~s~] | Glacier",
+            "AColor": 0,
+            "Id": 280,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 4.3699
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 209.5813,
+            "Y": -186.0714,
+            "BColor": 13,
+            "Label": "[~p~Restauration~s~] | Sushi Bar",
+            "AColor": 0,
+            "Id": 120,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 54.6136
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -1277.1924,
+            "Y": -1132.4489,
+            "BColor": 2,
+            "Label": "[~p~Restauration~s~] | Coffee-Shop",
+            "AColor": 0,
+            "Id": 89,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 7.7455
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 763.5386,
+            "Y": 4175.4712,
+            "BColor": 49,
+            "Label": "[Activités] | Chasseur",
+            "AColor": 0,
+            "Id": 480,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 39.5999
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": -627.8388,
+            "Y": -233.5786,
+            "BColor": 28,
+            "Label": "[~o~Magasin~s~] | Bijouterie",
+            "AColor": 0,
+            "Id": 439,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 37.057
+        },
+        {
+            "Area": false,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 2712.3772,
+            "Y": 3399.9648,
+            "BColor": 5,
+            "Label": "[~o~Magasin~s~] | Grossiste Ventes",
+            "AColor": 0,
+            "Id": 318,
+            "Job": "ALL",
+            "ASize": 0.0,
+            "Z": 57.0529
+        },
+        {
+            "ASize": 0.0,
+            "BSize": 0.8,
+            "Job2": "ALL",
+            "X": 29.5431,
+            "Y": -1770.187,
+            "Z": 29.6074,
+            "Label": "[~o~Magasin~s~] | Grossiste Achats",
+            "AColor": 0,
+            "Id": 318,
+            "Job": "ALL",
+            "Area": false,
+            "BColor": 5
+        }
+    ]
 }

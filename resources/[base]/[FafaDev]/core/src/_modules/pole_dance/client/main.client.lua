@@ -77,7 +77,9 @@ end
 
 -- Callback pour rafraîchir les pole dance
 CORE.register_client_callback("fafadev:to_client:refresh_pole_dance", function(handler, poleDanceData)
-    FUN_HANDLE_POLE_DANCE(poleDanceData)
+    if poleDanceData then
+        FUN_HANDLE_POLE_DANCE(poleDanceData)
+    end
     handler(true)
 end)
 

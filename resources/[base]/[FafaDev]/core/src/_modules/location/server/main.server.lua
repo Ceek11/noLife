@@ -132,6 +132,40 @@ CORE.register_server_callback("fafadev:to_server:create_location", function(sour
     cb(true)
 end)
 
+CORE.register_server_callback("fafadev:to_server:update_location", function(source, cb, oldLocationName, locationData)
+    if not locationData or not oldLocationName or not locationData.name or not locationData.coords or not locationData.spawn_positions or not locationData.vehicles_list then
+        cb(false)
+        return
+    end
+    
+    -- Vérifier que l'ancienne location existe
+    if not TBL_LOCATIONS[oldLocationName] then
+        cb(false)
+        return
+    end
+    
+    -- Si le nom a changé, vérifier que le nouveau nom n'existe pas déjà
+    if oldLocationName ~= locationData.name and TBL_LOCATIONS[locationData.name] then
+        cb(false)
+        return
+    end
+    
+    -- Supprimer l'ancienne location s'il a changé de nom
+    if oldLocationName ~= locationData.name then
+        TBL_LOCATIONS[oldLocationName] = nil
+    end
+    
+    -- Mettre à jour la location dans la table
+    TBL_LOCATIONS[locationData.name] = locationData
+    
+    -- Sauvegarder dans le fichier JSON
+    SaveLocationsToFile()
+    
+    -- Rafraîchir automatiquement les locations pour tous les joueurs
+    CORE.trigger_client_callback("fafadev:to_client:refresh_locations", -1, function() end, TBL_LOCATIONS)
+    cb(true)
+end)
+
 CORE.register_server_callback("fafadev:to_server:delete_location", function(source, cb, locationName)
     if not locationName or not TBL_LOCATIONS[locationName] then
         cb(false)

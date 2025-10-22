@@ -24,7 +24,9 @@ end
 CORE.register_server_event("fafadev:to_server:back", function(source, name, ...)
     local handler = tbl_callbacks[name]
     if handler then
-        handler(...)
+        if type(handler) == "function" then
+            handler(...)
+        end
         tbl_callbacks[name] = nil
     else
         error(("Callback not found: %s"):format(name))

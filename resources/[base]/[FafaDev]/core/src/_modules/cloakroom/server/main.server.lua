@@ -78,6 +78,53 @@ CORE.register_server_callback("fafadev:to_server:create_cloakroom", function(sou
     end
 end)
 
+CORE.register_server_callback("fafadev:to_server:update_cloakroom", function(source, cb, cloakroomData)
+    if not cloakroomData or not cloakroomData.old_name or not cloakroomData.name or not cloakroomData.coords or not cloakroomData.job then
+        cb(false)
+        return
+    end
+    
+    -- Vérifier que l'ancien vestiaire existe
+    if not TBL_CLOAKROOMS[cloakroomData.old_name] then
+        cb(false)
+        return
+    end
+    
+    -- Si le nom a changé, vérifier que le nouveau nom n'existe pas déjà
+    if cloakroomData.old_name ~= cloakroomData.name and TBL_CLOAKROOMS[cloakroomData.name] then
+        cb(false)
+        return
+    end
+    
+    -- Supprimer l'ancien vestiaire s'il a changé de nom
+    if cloakroomData.old_name ~= cloakroomData.name then
+        TBL_CLOAKROOMS[cloakroomData.old_name] = nil
+    end
+    
+    -- Mettre à jour le vestiaire dans la table
+    TBL_CLOAKROOMS[cloakroomData.name] = cloakroomData
+    
+    -- Sauvegarder dans le fichier JSON
+    local cloakroomsArray = {}
+    for _, cloakroom in pairs(TBL_CLOAKROOMS) do
+        table.insert(cloakroomsArray, cloakroom)
+    end
+    
+    local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(cloakroomsArray, {indent = true}), -1)
+    if success then
+        -- Rafraîchir automatiquement les vestiaires pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_cloakrooms", -1, function() end, TBL_CLOAKROOMS)
+        cb(true)
+    else
+        -- Annuler les changements en cas d'erreur
+        if cloakroomData.old_name ~= cloakroomData.name then
+            TBL_CLOAKROOMS[cloakroomData.old_name] = TBL_CLOAKROOMS[cloakroomData.name]
+            TBL_CLOAKROOMS[cloakroomData.name] = nil
+        end
+        cb(false)
+    end
+end)
+
 CORE.register_server_callback("fafadev:to_server:delete_cloakroom", function(source, cb, cloakroomName)
     if not cloakroomName or not TBL_CLOAKROOMS[cloakroomName] then
         cb(false)

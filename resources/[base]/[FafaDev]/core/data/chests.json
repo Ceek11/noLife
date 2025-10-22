@@ -1,19 +1,20 @@
 [
     {
-        "options": {
-            "max_weight": 2000
-        },
-        "message": "Press ~INPUT_CONTEXT~ to access the coffre.",
+        "old_name": "coffre_template",
         "coords": [
             {
-                "z": 28.509,
-                "y": -1024.169,
-                "x": 438.202
+                "z": 28.51,
+                "x": 438.2,
+                "y": -1024.17
             }
         ],
-        "drawmarker": false,
         "label": "Coffre template",
         "name": "coffre_template",
-        "job": "template"
+        "job": "template",
+        "message": "Press ~INPUT_CONTEXT~ to access the coffre.",
+        "drawmarker": false,
+        "options": {
+            "max_weight": 2000
+        }
     }
 ]

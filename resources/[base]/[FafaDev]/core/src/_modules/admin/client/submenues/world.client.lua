@@ -1,3 +1,6 @@
+-- Variables globales
+TBL_POLE_DANCE = {}
+
 TBL_SUBMENUES_WORLD = {
     {label = "Gestion des Shops", description = "Gestion des shops du serveur", uid = "shops"},
     {label = "Gestion des Coffres", description = "Gestion des coffres du serveur", uid = "chests"},
@@ -96,9 +99,11 @@ function OpenMenuWorldAdmin()
         }, sub_menus_admin["peds"])
         RageUI.Button("Gestion des Pole Dance", nil, {}, true, {
             onSelected = function()
-                CORE.trigger_server_callback("fafadev:to_server:get_pole_dance", function(pole_dance)
-                    TBL_POLE_DANCE = pole_dance
-                end)
+                if not TBL_POLE_DANCE or next(TBL_POLE_DANCE) == nil then
+                    CORE.trigger_server_callback("fafadev:to_server:get_pole_dance", function(pole_dance)
+                        TBL_POLE_DANCE = pole_dance
+                    end)
+                end
             end
         }, sub_menus_admin["pole_dance"])
         RageUI.Button("Gestion des Concessionnaires", nil, {}, true, {

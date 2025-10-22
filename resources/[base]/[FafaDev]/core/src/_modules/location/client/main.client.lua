@@ -32,5 +32,5 @@ end
 
 CORE.register_client_callback("fafadev:to_client:refresh_locations", function(handler, locations)
     current_locations = locations
-    handler()
+    handler(true)
 end)
