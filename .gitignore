@@ -2,7 +2,7 @@
 /resources/\[local\]/
 /db/
 /artifacts/
-/resources/[base]/[FafaDev]/core/data
+/resources/[base]/[FafaDev]/core/data/*.json
 /resources/[base]/[others]/doorBuilder/doors.json
 server.cfg
 run.bat
