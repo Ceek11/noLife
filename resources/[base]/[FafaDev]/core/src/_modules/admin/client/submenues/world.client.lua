@@ -1,15 +1,3 @@
--- Import des builders
-local blips_builder = require('src._modules.admin.client.builder.blips')
-local shops_builder = require('src._modules.admin.client.builder.shops')
-local chests_builder = require('src._modules.admin.client.builder.chests')
-local boss_builder = require('src._modules.admin.client.builder.boss')
-local cloakrooms_builder = require('src._modules.admin.client.builder.cloakrooms')
-local locations_builder = require('src._modules.admin.client.builder.locations')
-local garages_builder = require('src._modules.admin.client.builder.garages')
-local peds_builder = require('src._modules.admin.client.builder.peds')
-local pole_dance_builder = require('src._modules.admin.client.builder.pole_dance')
-local concess_builder = require('src._modules.admin.client.builder.concess')
-
 TBL_SUBMENUES_WORLD = {
     {label = "Gestion des Shops", description = "Gestion des shops du serveur", uid = "shops"},
     {label = "Gestion des Coffres", description = "Gestion des coffres du serveur", uid = "chests"},
@@ -42,12 +30,6 @@ local TBL_BLIPS = {}
 local TBL_PEDS = {}
 local TBL_POLE_DANCE = {}
 local TBL_CONCESS_BUILDER = {}
-
--- Fonction pour gérer les peds
-function FUN_HANDLE_PEDS(peds)
-    -- TODO: Implémenter la gestion des peds côté client
-    print("Gestion des peds:", json.encode(peds))
-end
 
 function OpenMenuWorldAdmin()
     RageUI.IsVisible(sub_menus_admin["server"], function()

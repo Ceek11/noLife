@@ -75,6 +75,12 @@ function FUN_HANDLE_POLE_DANCE(pole_dance_locations)
     end)
 end
 
+-- Callback pour rafraîchir les pole dance
+CORE.register_client_callback("fafadev:to_client:refresh_pole_dance", function(handler, poleDanceData)
+    FUN_HANDLE_POLE_DANCE(poleDanceData)
+    handler(true)
+end)
+
 -- Fonction pour vérifier l'accès aux points de pole dance
 function FUN_CHECK_POLE_DANCE_ACCESS(poleDanceData, playerJob, playerGrade)
     if poleDanceData.jobAccess and #poleDanceData.jobAccess > 0 then

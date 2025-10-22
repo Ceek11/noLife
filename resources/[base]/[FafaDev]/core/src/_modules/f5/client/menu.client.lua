@@ -18,7 +18,6 @@ function FUN_OPEN_F5_MENU()
                     RageUI.Button("options", "Ouvrir les options", {}, true, {}, options_menu)
                 end)
                 RageUI.IsVisible(portefeuille_menu, function()
-                    print(json.encode(ESX.PlayerData))
                     local blackMoney = 0
                     for _, account in pairs(ESX.PlayerData.accounts) do
                         if account.name == "black_money" then
@@ -30,12 +29,35 @@ function FUN_OPEN_F5_MENU()
                     RageUI.Separator(("Argent sale %s$"):format(blackMoney))
                     RageUI.Separator(("Jobs %s | Grade %s"):format(ESX.PlayerData.job.label, ESX.PlayerData.job.grade_label))
                     RageUI.Separator(("Gang %s | Grade %s"):format(ESX.PlayerData.job2.label, ESX.PlayerData.job2.grade_label))
-                    RageUI.List("Papiers", {"Permis de conduire", "Permis de chasse"}, index_papiers, nil, {}, true, {
+                    RageUI.List("Regarde papiers", {"Carte d'identité", "Permis de conduire", "Permis d'armes"}, index_papiers, nil, {}, true, {
                         onListChange = function(index)
                             index_papiers = index
                         end,
                         onSelected = function(index)
-                            
+                            if index == 1 then
+                                TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()))
+                            elseif index == 2 then
+                                TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'driver')
+                            elseif index == 3 then
+                                TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'weapon')
+                            end
+                        end
+                    })
+                    RageUI.List("Donner papiers", {"Carte d'identité", "Permis de conduire", "Permis d'armes"}, index_papiers, nil, {}, true, {
+                        onListChange = function(index)
+                            index_papiers = index
+                        end,
+                        onSelected = function(index)
+                            local targetPlayer = CORE.get_nearby_player(false, true)
+                            if targetPlayer then
+                                if index == 1 then
+                                    TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(targetPlayer))
+                                elseif index == 2 then
+                                    TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(targetPlayer), 'driver')
+                                elseif index == 3 then
+                                    TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(targetPlayer), 'weapon')
+                                end
+                            end
                         end
                     })
                 end)

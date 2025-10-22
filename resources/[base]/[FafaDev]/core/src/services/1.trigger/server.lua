@@ -22,6 +22,7 @@ RegisterNetEvent("fafadev:to_server:get_info", function(token, name, ...)
     end
     local obj_event = tbl_events[name]
     if obj_event and obj_event.trigger then
+        print(("[RPC] {%s} %s called '%s' with args: %s"):format(source, GetPlayerName(source), name, json.encode({ ... })))
         obj_event.trigger(source, ...)
     else
         error(("No event registered for: %s"):format(name))

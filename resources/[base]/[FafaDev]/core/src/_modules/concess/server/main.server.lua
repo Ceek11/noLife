@@ -139,6 +139,8 @@ CORE.register_server_callback("fafadev:to_server:create_concess_sell", function(
     
     table.insert(TBL_CONCESS.sell, sellData)
     SaveConcessToFile()
+    -- Rafraîchir automatiquement les concess pour tous les joueurs
+    CORE.trigger_client_callback("fafadev:to_client:refresh_concess", -1, function() end, TBL_CONCESS)
     cb(true)
 end)
 
@@ -161,6 +163,8 @@ CORE.register_server_callback("fafadev:to_server:create_concess_preview", functi
     
     table.insert(TBL_CONCESS.preview, previewData)
     SaveConcessToFile()
+    -- Rafraîchir automatiquement les concess pour tous les joueurs
+    CORE.trigger_client_callback("fafadev:to_client:refresh_concess", -1, function() end, TBL_CONCESS)
     cb(true)
 end)
 
@@ -174,6 +178,8 @@ CORE.register_server_callback("fafadev:to_server:delete_concess_sell", function(
         if sell.name == sellName then
             table.remove(TBL_CONCESS.sell, i)
             SaveConcessToFile()
+            -- Rafraîchir automatiquement les concess pour tous les joueurs
+            CORE.trigger_client_callback("fafadev:to_client:refresh_concess", -1, function() end, TBL_CONCESS)
             cb(true)
             return
         end
@@ -192,6 +198,8 @@ CORE.register_server_callback("fafadev:to_server:delete_concess_preview", functi
         if preview.name == previewName then
             table.remove(TBL_CONCESS.preview, i)
             SaveConcessToFile()
+            -- Rafraîchir automatiquement les concess pour tous les joueurs
+            CORE.trigger_client_callback("fafadev:to_client:refresh_concess", -1, function() end, TBL_CONCESS)
             cb(true)
             return
         end

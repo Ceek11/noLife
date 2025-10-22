@@ -68,6 +68,28 @@ return {
 		label = 'Dirty Money',
 	},
 
+	["canneapeche"] = {
+		label = "Canne à pêche",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+
+	["paquetcigarette"] = {
+		label = "Paquet de cigarettes",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["hamecon"] = {
+		label = "Hamecon",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
 	['burger'] = {
 		label = 'Burger',
 		weight = 220,
@@ -138,7 +160,7 @@ return {
 		weight = 160,
 	},
 
-	['phone'] = {
+	['telephone'] = {
 		label = 'Phone',
 		weight = 190,
 		stack = false,
@@ -209,22 +231,13 @@ return {
 		consume = 0,
 	},
 
-	['mastercard'] = {
-		label = 'Fleeca Card',
-		stack = false,
-		weight = 10,
-		client = {
-			image = 'card_bank.png'
-		}
-	},
-
 	['scrapmetal'] = {
 		label = 'Scrap Metal',
 		weight = 80,
 	},
 
-	["bread"] = {
-		label = "Bread",
+	["sandwich"] = {
+		label = "Pain",
 		weight = 1,
 		stack = true,
 		close = true,

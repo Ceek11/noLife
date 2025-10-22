@@ -1,11 +1,6 @@
 local function validate_boss_permission(source, job_name)
     local xPlayer = ESX.GetPlayerFromId(source)
     local result = xPlayer and xPlayer.job and xPlayer.job.grade_name == "boss" and xPlayer.job.name == job_name
-    
-    if not result then
-        print("[CLOAKROOM] Permission refusée - Joueur:", xPlayer and xPlayer.getName() or "Inconnu", "Job:", xPlayer and xPlayer.job and xPlayer.job.name or "N/A", "Grade:", xPlayer and xPlayer.job and xPlayer.job.grade_name or "N/A", "Requis:", job_name)
-    end
-    
     return result
 end
 
@@ -34,9 +29,7 @@ CORE.register_server_callback("templatejob:to_server:get_cloakroom_data", functi
     end)
 end)
 
-CORE.register_server_event("templatejob:to_server:add_cloakroom", function(source, society_name, info_outfit, outfit)
-    print("[CLOAKROOM] Tentative de création - Job:", society_name, "Label:", info_outfit and info_outfit.label or "N/A", "Grade:", info_outfit and info_outfit.grade or "N/A")
-    
+CORE.register_server_event("templatejob:to_server:add_cloakroom", function(source, society_name, info_outfit, outfit)    
     if not validate_boss_permission(source, society_name) then
         TriggerClientEvent("esx:showNotification", source, "Vous n'avez pas les permissions nécessaires")
         return
@@ -67,11 +60,9 @@ CORE.register_server_event("templatejob:to_server:add_cloakroom", function(sourc
         { society_name, json.encode(info_data), json.encode(outfit_data)}, 
         function(insertId)
             if insertId then
-                print("[CLOAKROOM] Tenue créée avec succès - ID:", insertId, "Label:", info_data.label)
                 notify_clients_update(society_name)
                 TriggerClientEvent("esx:showNotification", source, "Tenue créée avec succès")
             else
-                print("[CLOAKROOM] ERREUR - Échec de la création de la tenue pour:", info_data.label)
                 TriggerClientEvent("esx:showNotification", source, "Échec de la création de la tenue")
             end
         end)

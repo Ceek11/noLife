@@ -40,10 +40,6 @@ function openPoleDanceMenu(data)
                                 end
                             })
                         end
-                    else
-                        RageUI.Button("~r~Aucune animation disponible", "Aucune animation configurée", {}, true, {
-                            onSelected = function() end
-                        })
                     end
                 end)
                 

@@ -53,6 +53,12 @@ function FUN_HANDLE_CONCESS(concess)
     end)
 end
 
+-- Callback pour rafraîchir les concess
+CORE.register_client_callback("fafadev:to_client:refresh_concess", function(handler, concessData)
+    FUN_HANDLE_CONCESS(concessData)
+    handler(true)
+end)
+
 TBL_CATEGORIES = {}
 TBL_VEHICLES = {}
 function FUN_GET_CATEGORIES()

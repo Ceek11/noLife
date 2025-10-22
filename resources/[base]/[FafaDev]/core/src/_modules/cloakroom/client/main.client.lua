@@ -44,4 +44,10 @@ function FUN_OPEN_CLOAKROOM_MENU(cloakroomData)
     template_menu_cloakroom(cloakroomData)
 end
 
+-- Callback pour rafraîchir les vestiaires
+CORE.register_client_callback("fafadev:to_client:refresh_cloakrooms", function(handler, cloakroomsData)
+    FUN_HANDLE_CLOAKROOMS(cloakroomsData)
+    handler(true)
+end)
+
 -- Cette fonction sera appelée par le système de tasks

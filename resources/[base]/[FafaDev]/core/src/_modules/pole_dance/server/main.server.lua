@@ -89,6 +89,8 @@ CORE.register_server_callback("fafadev:to_server:create_pole_dance", function(so
     if success then
         -- Recharger les données
         FUN_LOAD_POLE_DANCE()
+        -- Rafraîchir automatiquement les pole dance pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_pole_dance", -1, function() end, TBL_POLE_DANCE)
         cb(true)
     else
         cb(false)
@@ -135,6 +137,8 @@ CORE.register_server_callback("fafadev:to_server:delete_pole_dance", function(so
     if success then
         -- Recharger les données
         FUN_LOAD_POLE_DANCE()
+        -- Rafraîchir automatiquement les pole dance pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_pole_dance", -1, function() end, TBL_POLE_DANCE)
         cb(true)
     else
         cb(false)

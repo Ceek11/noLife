@@ -88,3 +88,9 @@ function FUN_HAS_LICENSE(licenseName)
     end
     return false
 end
+
+-- Callback pour rafraîchir les shops
+CORE.register_client_callback("fafadev:to_client:refresh_shops", function(handler, shopsData)
+    FUN_HANDLE_SHOPS(shopsData)
+    handler(true)
+end)

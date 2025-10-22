@@ -132,5 +132,5 @@ end
 
 CORE.register_client_callback("fafadev:to_client:refresh_peds", function(handler, peds)
     FUN_HANDLE_PEDS(peds)
-    handler()
+    handler(true)
 end)

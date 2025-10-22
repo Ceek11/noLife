@@ -38,6 +38,8 @@ CORE.register_server_callback("fafadev:to_server:create_chest", function(source,
     
     local success = SaveResourceFile(GetCurrentResourceName(), 'data/chests.json', json.encode(chestsArray, {indent = true}), -1)
     if success then
+        -- Rafraîchir automatiquement les coffres pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_chests", -1, function() end, TBL_CHESTS)
         cb(true)
     else
         -- Annuler les changements en cas d'erreur
@@ -63,8 +65,8 @@ CORE.register_server_callback("fafadev:to_server:delete_chest", function(source,
     
     local success = SaveResourceFile(GetCurrentResourceName(), 'data/chests.json', json.encode(chestsArray, {indent = true}), -1)
     if success then
-        cb(true)
-    else
-        cb(false)
+        -- Rafraîchir automatiquement les coffres pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_chests", -1, function() end, TBL_CHESTS)
     end
+    cb(success)
 end)

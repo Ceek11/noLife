@@ -69,6 +69,8 @@ CORE.register_server_callback("fafadev:to_server:create_cloakroom", function(sou
     
     local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(cloakroomsArray, {indent = true}), -1)
     if success then
+        -- Rafraîchir automatiquement les vestiaires pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_cloakrooms", -1, function() end, TBL_CLOAKROOMS)
         cb(true)
     else
         TBL_CLOAKROOMS[cloakroomData.name] = nil
@@ -92,8 +94,8 @@ CORE.register_server_callback("fafadev:to_server:delete_cloakroom", function(sou
     
     local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(cloakroomsArray, {indent = true}), -1)
     if success then
-        cb(true)
-    else
-        cb(false)
+        -- Rafraîchir automatiquement les vestiaires pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_cloakrooms", -1, function() end, TBL_CLOAKROOMS)
     end
+    cb(success)
 end)

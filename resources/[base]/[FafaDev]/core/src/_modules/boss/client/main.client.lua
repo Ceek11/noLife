@@ -60,7 +60,11 @@ function FUN_CHECK_BOSS_ACCESS(bossData, playerJob, playerGrade)
     return true
 end
 
-
+-- Callback pour rafraîchir les menus boss
+CORE.register_client_callback("fafadev:to_client:refresh_boss", function(handler, bossData)
+    FUN_HANDLE_BOSS_MENUS(bossData)
+    handler(true)
+end)
 
 -- Gestion des offres d'emploi
 local jobOfferActive = false

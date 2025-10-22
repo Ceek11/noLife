@@ -45,6 +45,8 @@ CORE.register_server_callback("fafadev:to_server:create_shop", function(source, 
     
     local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(shopsArray, {indent = true}), -1)
     if success then
+        -- Rafraîchir automatiquement les shops pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_shops", -1, function() end, TBL_SHOPS)
         cb(true)
     else
         TBL_SHOPS[shopData.name] = nil
@@ -67,9 +69,9 @@ CORE.register_server_callback("fafadev:to_server:delete_shop", function(source, 
     
     local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(shopsArray, {indent = true}), -1)
     if success then
-        cb(true)
-    else
-        cb(false)
+        -- Rafraîchir automatiquement les shops pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_shops", -1, function() end, TBL_SHOPS)
     end
+    cb(success)
 end)
 

@@ -20,7 +20,7 @@ function shops_builder(shopsData)
                     {type = 'checkbox', label = 'Afficher le marqueur', description = 'Afficher le marqueur sur la carte', checked = true}
                 })
                 if input then
-                    local coordsList = string.split(input[2], "|")
+                    local coordsList = string.split(input[3], "|")
                     local coordsArray = {}
                     for i, coordString in pairs(coordsList) do
                         local coordsData = string.split(coordString, ",")

@@ -35,6 +35,8 @@ CORE.register_server_callback("fafadev:to_server:create_boss", function(source, 
     
     local success = SaveResourceFile(GetCurrentResourceName(), 'data/boss.json', json.encode(bossMenusArray, {indent = true}), -1)
     if success then
+        -- Rafraîchir automatiquement les menus boss pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_boss", -1, function() end, TBL_BOSS_MENUS)
         cb(true)
     else
         TBL_BOSS_MENUS[bossData.name] = nil
@@ -58,8 +60,8 @@ CORE.register_server_callback("fafadev:to_server:delete_boss", function(source, 
     
     local success = SaveResourceFile(GetCurrentResourceName(), 'data/boss.json', json.encode(bossMenusArray, {indent = true}), -1)
     if success then
-        cb(true)
-    else
-        cb(false)
+        -- Rafraîchir automatiquement les menus boss pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_boss", -1, function() end, TBL_BOSS_MENUS)
     end
+    cb(success)
 end)

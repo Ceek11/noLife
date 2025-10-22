@@ -128,5 +128,6 @@ end)
 
 CORE.register_client_callback("fafadev:to_client:refresh_garages", function(handler, garages)
     TBL_GARAGES = garages
-    handler()
+    FUN_HANDLE_GARAGES(garages)
+    handler(true)
 end)

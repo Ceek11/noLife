@@ -41,3 +41,9 @@ function FUN_HANDLE_CHESTS(tbl_chests)
         end
     end)
 end
+
+-- Callback pour rafraîchir les coffres
+CORE.register_client_callback("fafadev:to_client:refresh_chests", function(handler, chestsData)
+    FUN_HANDLE_CHESTS(chestsData)
+    handler(true)
+end)
