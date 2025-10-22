@@ -29,8 +29,10 @@ local function CreateBlipsFromData(blipsData)
 
     -- Création des blips principaux
     for _, icon in pairs(ClassicBlips) do
-        if (icon.Job == "ALL" or (ESX.PlayerData.job and ESX.PlayerData.job.name == icon.Job)) or 
-           (icon.Job2 == "ALL" or (ESX.PlayerData.job2 and ESX.PlayerData.job2.name == icon.Job2)) then
+        local playerJob = ESX.PlayerData.job and ESX.PlayerData.job.name
+        local playerJob2 = ESX.PlayerData.job2 and ESX.PlayerData.job2.name
+        if (icon.Job == "ALL" or playerJob == icon.Job) or 
+           (icon.Job2 == "ALL" or playerJob2 == icon.Job2) then
             
             local blip = AddBlipForCoord(icon.X, icon.Y, icon.Z)
             SetBlipSprite(blip, icon.Id)
@@ -49,8 +51,10 @@ local function CreateBlipsFromData(blipsData)
     -- Création des blips de zone
     for _, Area in pairs(ClassicBlips) do
         if Area.Area then
-            if (Area.Job == "ALL" or (ESX.PlayerData.job and ESX.PlayerData.job.name == Area.Job)) or 
-               (Area.Job2 == "ALL" or (ESX.PlayerData.job2 and ESX.PlayerData.job2.name == Area.Job2)) then
+            local playerJob = ESX.PlayerData.job and ESX.PlayerData.job.name
+            local playerJob2 = ESX.PlayerData.job2 and ESX.PlayerData.job2.name
+            if (Area.Job == "ALL" or playerJob == Area.Job) or 
+               (Area.Job2 == "ALL" or playerJob2 == Area.Job2) then
                 
                 local areaBlip = AddBlipForRadius(Area.X, Area.Y, Area.Z, Area.ASize)
                 SetBlipColour(areaBlip, Area.AColor)
@@ -64,7 +68,9 @@ local function CreateBlipsFromData(blipsData)
     -- Création des blips d'entreprise
     if Blips.Entreprise then
         for _, v in pairs(Blips.Entreprise) do
-            if v.job == ESX.PlayerData.job.name or v.job == ESX.PlayerData.job2.name then
+            local playerJob = ESX.PlayerData.job and ESX.PlayerData.job.name
+            local playerJob2 = ESX.PlayerData.job2 and ESX.PlayerData.job2.name
+            if v.job == playerJob or v.job == playerJob2 then
                 local BlipEn = AddBlipForCoord(v.pos.x, v.pos.y, v.pos.z)
                 SetBlipSprite(BlipEn, v.id)
                 SetBlipDisplay(BlipEn, 4)

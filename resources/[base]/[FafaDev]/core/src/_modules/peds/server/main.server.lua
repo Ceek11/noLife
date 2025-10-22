@@ -36,6 +36,25 @@ CORE.register_server_callback("fafadev:to_server:create_ped", function(source, c
     end
 end)
 
+CORE.register_server_callback("fafadev:to_server:update_ped", function(source, cb, pedIndex, pedData)
+    if not pedIndex or not TBL_PEDS[pedIndex] or not pedData then
+        cb(false)
+        return
+    end
+    
+    -- Mettre à jour les données du ped
+    TBL_PEDS[pedIndex] = pedData
+    
+    local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(TBL_PEDS, {indent = true}), -1)
+    if success then
+        -- Rafraîchir automatiquement les peds pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_peds", -1, function() end, TBL_PEDS)
+        cb(true)
+    else
+        cb(false)
+    end
+end)
+
 CORE.register_server_callback("fafadev:to_server:delete_ped", function(source, cb, pedIndex)
     if not pedIndex or not TBL_PEDS[pedIndex] then
         cb(false)

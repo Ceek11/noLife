@@ -29,7 +29,8 @@ CORE.register_server_event("fafadev:to_server:back", function(source, name, ...)
         end
         tbl_callbacks[name] = nil
     else
-        error(("Callback not found: %s"):format(name))
+        -- Ne pas générer d'erreur si le callback n'existe pas (cas des callbacks sans réponse attendue)
+        print(("Warning: Callback not found (may be expected): %s"):format(name))
     end
 end)
 
