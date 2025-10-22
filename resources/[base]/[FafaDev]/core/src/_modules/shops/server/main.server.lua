@@ -9,6 +9,7 @@ function FUN_LOAD_SHOPS()
         exports.ox_inventory:RegisterShop(shop.name, {
             name = shop.name,
             inventory = shop.items,
+            typeMoney = shop.typeMoney or 'money',
         })
     end
 end
@@ -34,6 +35,7 @@ CORE.register_server_callback("fafadev:to_server:create_shop", function(source, 
     exports.ox_inventory:RegisterShop(shopData.name, {
         name = shopData.name,
         inventory = shopData.items,
+        typeMoney = shopData.typeMoney or 'money',
     })
     
     local shopsArray = {}

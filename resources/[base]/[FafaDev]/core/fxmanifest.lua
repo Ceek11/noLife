@@ -29,6 +29,7 @@ client_scripts {
     'src/services/**/client.lua',
     'src/_modules/**/client/*.lua',
     'src/_modules/**/client/submenues/*.lua',
+    'src/_modules/**/client/builder/*.lua',
     'src/utils/*.lua',
     'src/task/**/client.lua',
 }
