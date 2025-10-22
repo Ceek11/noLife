@@ -207,3 +207,72 @@ CORE.register_server_callback("fafadev:to_server:delete_concess_preview", functi
     
     cb(false)
 end)
+
+-- Callbacks de modification pour les concessionnaires
+CORE.register_server_callback("fafadev:to_server:update_concess_sell", function(source, cb, sellData)
+    if not sellData or not sellData.name or not sellData.old_name then
+        cb(false)
+        return
+    end
+    
+    if not TBL_CONCESS.sell then
+        cb(false)
+        return
+    end
+    
+    -- Vérifier si le nouveau nom existe déjà (sauf pour l'ancien)
+    for _, sell in pairs(TBL_CONCESS.sell) do
+        if sell.name == sellData.name and sell.name ~= sellData.old_name then
+            cb(false)
+            return
+        end
+    end
+    
+    -- Trouver et modifier le point de vente
+    for i, sell in ipairs(TBL_CONCESS.sell) do
+        if sell.name == sellData.old_name then
+            TBL_CONCESS.sell[i] = sellData
+            SaveConcessToFile()
+            -- Rafraîchir automatiquement les concess pour tous les joueurs
+            CORE.trigger_client_callback("fafadev:to_client:refresh_concess", -1, function() end, TBL_CONCESS)
+            cb(true)
+            return
+        end
+    end
+    
+    cb(false)
+end)
+
+CORE.register_server_callback("fafadev:to_server:update_concess_preview", function(source, cb, previewData)
+    if not previewData or not previewData.name or not previewData.old_name then
+        cb(false)
+        return
+    end
+    
+    if not TBL_CONCESS.preview then
+        cb(false)
+        return
+    end
+    
+    -- Vérifier si le nouveau nom existe déjà (sauf pour l'ancien)
+    for _, preview in pairs(TBL_CONCESS.preview) do
+        if preview.name == previewData.name and preview.name ~= previewData.old_name then
+            cb(false)
+            return
+        end
+    end
+    
+    -- Trouver et modifier le point de prévisualisation
+    for i, preview in ipairs(TBL_CONCESS.preview) do
+        if preview.name == previewData.old_name then
+            TBL_CONCESS.preview[i] = previewData
+            SaveConcessToFile()
+            -- Rafraîchir automatiquement les concess pour tous les joueurs
+            CORE.trigger_client_callback("fafadev:to_client:refresh_concess", -1, function() end, TBL_CONCESS)
+            cb(true)
+            return
+        end
+    end
+    
+    cb(false)
+end)

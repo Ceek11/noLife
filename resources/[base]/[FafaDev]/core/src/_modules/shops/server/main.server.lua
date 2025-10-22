@@ -54,6 +54,37 @@ CORE.register_server_callback("fafadev:to_server:create_shop", function(source, 
     end
 end)
 
+CORE.register_server_callback("fafadev:to_server:update_shop", function(source, cb, shopName, shopData)
+    if not shopName or not shopData or not TBL_SHOPS[shopName] then
+        cb(false)
+        return
+    end
+    
+    -- Mettre à jour les données du shop
+    TBL_SHOPS[shopName] = shopData
+    
+    -- Mettre à jour le shop dans ox_inventory
+    exports.ox_inventory:RegisterShop(shopData.name, {
+        name = shopData.name,
+        inventory = shopData.items,
+        typeMoney = shopData.typeMoney or 'money',
+    })
+    
+    local shopsArray = {}
+    for _, shop in pairs(TBL_SHOPS) do
+        table.insert(shopsArray, shop)
+    end
+    
+    local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(shopsArray, {indent = true}), -1)
+    if success then
+        -- Rafraîchir automatiquement les shops pour tous les joueurs
+        CORE.trigger_client_callback("fafadev:to_client:refresh_shops", -1, function() end, TBL_SHOPS)
+        cb(true)
+    else
+        cb(false)
+    end
+end)
+
 CORE.register_server_callback("fafadev:to_server:delete_shop", function(source, cb, shopName)
     if not shopName or not TBL_SHOPS[shopName] then
         cb(false)

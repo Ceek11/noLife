@@ -1,57 +1,68 @@
 {
     "sell": [
         {
-            "name": "cardealer",
             "drawmarker": true,
-            "coords": [
+            "categories": [
+                "super",
+                "compacts",
+                "sports"
+            ],
+            "spawnPositions": [
                 {
-                    "x": -63.501095,
-                    "y": -1106.249023,
-                    "z": 26.25009
+                    "x": -70.68,
+                    "z": 26.08,
+                    "heading": 0.0,
+                    "y": -1105.81
                 }
             ],
             "message": "Véhicule de luxe - Performance exceptionnelle",
-            "jobAccess": ["cardealer"],
-            "categories": ["super", "compacts", "sports"],
-            "spawnPositions": [
+            "name": "PDM",
+            "jobAccess": [
+                "cardealer"
+            ],
+            "old_name": "cardealer",
+            "coords": [
                 {
-
-                    "x": -70.679108,
-                    "y": -1105.807617,
-                    "z": 26.081764,
-                    "heading": 0.0
+                    "x": -63.5,
+                    "z": 26.25,
+                    "y": -1106.25
                 }
             ]
         }
     ],
     "preview": [
         {
-            "name": "cardealer",
             "drawmarker": true,
+            "categories": [
+                "super",
+                "compacts",
+                "sports"
+            ],
             "coords": [
                 {
                     "x": -65.79,
-                    "y": -1096.63,
-                    "z": 25.42
+                    "z": 25.42,
+                    "y": -1096.63
                 }
             ],
+            "old_name": "cardealer",
+            "testZoneRadius": 500,
             "message": "Prévisualisation - Supercar sportive",
-            "categories": ["super", "compacts", "sports"],
+            "name": "PMD",
+            "testPoint": {
+                "x": -1032.0,
+                "z": 13.75,
+                "heading": 330.0,
+                "y": -2730.0
+            },
             "spawnPositions": [
                 {
                     "x": -50.0,
-                    "y": -1100.0,
                     "z": 25.0,
-                    "heading": 0.0
+                    "heading": 0.0,
+                    "y": -1100.0
                 }
-            ],
-            "testPoint": {
-                "x": -1032.0,
-                "y": -2730.0,
-                "z": 13.75,
-                "heading": 330.0
-            },
-            "testZoneRadius": 500.0
+            ]
         }
     ]
 }

@@ -76,7 +76,6 @@ local function CreateBlipsFromData(blipsData)
                 BeginTextCommandSetBlipName("STRING")
                 AddTextComponentString(v.name)
                 EndTextCommandSetBlipName(BlipEn)
-
                 table.insert(BlipsEntreprise, BlipEn)
             end
         end

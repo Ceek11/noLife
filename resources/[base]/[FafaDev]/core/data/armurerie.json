@@ -1,0 +1,16 @@
+[
+    {
+        "message": "Appuyer sur ~INPUT_CONTEXT~ pour ouvrir l'armurerie",
+        "job": "police",
+        "drawmarker": true,
+        "label": "Armurerie",
+        "name": "armurerie",
+        "coords": [
+            {
+                "x": -1075.0,
+                "y": -253.6,
+                "z": 37.77
+            }
+        ]
+    }
+]

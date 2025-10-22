@@ -1,47 +1,11 @@
 TBL_MARKER_DESIGN = {
     ["default"] = {
-        marker_type = 22,                    -- Type de marqueur (22 = cylindre)
-        marker_color = {r = 137, g = 201, b = 17, a = 255}, -- Couleur RGBA
+        marker_type = 1,                    -- Type de marqueur (22 = cylindre)
+        marker_color = {r = 255, g = 0, b = 0, a = 255}, -- Couleur RGBA
         marker_size = {x = 0.5, y = 0.5, z = 0.5},         -- Taille du marqueur
         marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
         bobUpAndDown = false,                -- Mouvement de haut en bas
         faceCamera = false,                  -- Face à la caméra
-        rotate = false,                      -- Rotation automatique
-    },
-    ["garage"] = {
-        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
-        marker_color = {r = 0, g = 150, b = 255, a = 200}, -- Couleur bleue
-        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
-        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
-        bobUpAndDown = false,                -- Mouvement de haut en bas
-        faceCamera = true,                   -- Face à la caméra
-        rotate = false,                      -- Rotation automatique
-    },
-    ["garage_impound"] = {
-        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
-        marker_color = {r = 255, g = 0, b = 0, a = 200},   -- Couleur rouge
-        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
-        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
-        bobUpAndDown = false,                -- Mouvement de haut en bas
-        faceCamera = true,                   -- Face à la caméra
-        rotate = false,                      -- Rotation automatique
-    },
-    ["location"] = {
-        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
-        marker_color = {r = 0, g = 150, b = 255, a = 200}, -- Couleur bleue
-        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
-        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
-        bobUpAndDown = false,                -- Mouvement de haut en bas
-        faceCamera = true,                   -- Face à la caméra
-        rotate = false,                      -- Rotation automatique
-    },
-    ["shop"] = {
-        marker_type = 1,                     -- Type de marqueur (1 = cylindre)
-        marker_color = {r = 0, g = 150, b = 255, a = 200}, -- Couleur bleue
-        marker_size = {x = 1.0, y = 1.0, z = 1.0},         -- Taille du marqueur
-        marker_rotation = {x = 0.0, y = 0.0, z = 0.0},     -- Rotation du marqueur
-        bobUpAndDown = false,                -- Mouvement de haut en bas
-        faceCamera = true,                   -- Face à la caméra
         rotate = false,                      -- Rotation automatique
     }
 }

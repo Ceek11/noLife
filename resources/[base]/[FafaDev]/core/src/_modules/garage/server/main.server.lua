@@ -40,6 +40,20 @@ CORE.register_server_callback("fafadev:to_server:create_garage", function(source
     cb(true)
 end)
 
+CORE.register_server_callback("fafadev:to_server:update_garage", function(source, cb, garageName, garageData)
+    if not garageName or not garageData or not TBL_GARAGES[garageName] then
+        cb(false)
+        return
+    end
+    
+    -- Mettre à jour les données du garage
+    TBL_GARAGES[garageName] = garageData
+    SaveGarages()
+    -- Rafraîchir automatiquement les garages pour tous les joueurs
+    CORE.trigger_client_callback("fafadev:to_client:refresh_garages", -1, function() end, TBL_GARAGES)
+    cb(true)
+end)
+
 CORE.register_server_callback("fafadev:to_server:delete_garage", function(source, cb, garageName)
     if not garageName or not TBL_GARAGES[garageName] then
         cb(false)

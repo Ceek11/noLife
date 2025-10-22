@@ -10,15 +10,15 @@ TBL_SUBMENUES_WORLD = {
     {label = "Gestion des Pole Dance", description = "Gestion des pole dance du serveur", uid = "pole_dance"},
     {label = "Gestion des Concessionnaires", description = "Gestion des concessionnaires du serveur", uid = "concess"},
 }
+-- Création du menu builder principal
+sub_menus_admin["server"].builder = RageUI.CreateSubMenu(sub_menus_admin["server"], "Gestion Builder", "Créer et gérer les éléments du serveur")
 
 -- Création des sous-menus
 for i = 1, #TBL_SUBMENUES_WORLD do
     local sub_menu = TBL_SUBMENUES_WORLD[i]
-    sub_menus_admin[sub_menu.uid] = RageUI.CreateSubMenu(sub_menus_admin["server"], sub_menu.label, sub_menu.description)
+    sub_menus_admin[sub_menu.uid] = RageUI.CreateSubMenu(sub_menus_admin["server"].builder, sub_menu.label, sub_menu.description)
 end
 
--- Création du menu builder principal
-sub_menus_admin["server"].builder = RageUI.CreateSubMenu(sub_menus_admin["server"], "Gestion Builder", "Créer et gérer les éléments du serveur")
 
 local TBL_SHOPS = {}
 local TBL_CHESTS = {}

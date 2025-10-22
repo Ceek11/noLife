@@ -47,6 +47,30 @@ CORE.register_server_callback("fafadev:to_server:create_blip", function(source, 
     end
 end)
 
+CORE.register_server_callback("fafadev:to_server:update_blip", function(source, cb, blipData)
+    if not blipData or not blipData.type or not blipData.index or not blipData.data then
+        cb(false)
+        return
+    end
+    
+    if blipData.type == "classic" and TBL_BLIPS.ClassicBlips and TBL_BLIPS.ClassicBlips[blipData.index] then
+        TBL_BLIPS.ClassicBlips[blipData.index] = blipData.data
+    elseif blipData.type == "entreprise" and TBL_BLIPS.Blips and TBL_BLIPS.Blips.Entreprise and TBL_BLIPS.Blips.Entreprise[blipData.index] then
+        TBL_BLIPS.Blips.Entreprise[blipData.index] = blipData.data
+    else
+        cb(false)
+        return
+    end
+    
+    local success = SaveResourceFile(GetCurrentResourceName(), str_file_location, json.encode(TBL_BLIPS, {indent = true}), -1)
+    if success then
+        CORE.trigger_client_callback("fafadev:to_client:refresh_blips", -1, function() end, TBL_BLIPS)
+        cb(true)
+    else
+        cb(false)
+    end
+end)
+
 CORE.register_server_callback("fafadev:to_server:delete_blip", function(source, cb, blipType, blipIndex)
     if not blipType or not blipIndex then
         cb(false)

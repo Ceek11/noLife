@@ -1,7 +1,6 @@
 local open_f5_menu = false
 local f5_menu = RageUI.CreateMenu("F5", "Menu F5")
 local portefeuille_menu = RageUI.CreateSubMenu(f5_menu, "Portefeuille", "Portefeuille")
-local options_menu = RageUI.CreateSubMenu(f5_menu, "Options", "Options")
 local index_papiers = 1
 f5_menu.Closed = function()
     open_f5_menu = false
@@ -15,7 +14,6 @@ function FUN_OPEN_F5_MENU()
             while open_f5_menu do
                 RageUI.IsVisible(f5_menu, function()
                     RageUI.Button("Portefeuille", "Ouvrir le portefeuille", {}, true, {}, portefeuille_menu)
-                    RageUI.Button("options", "Ouvrir les options", {}, true, {}, options_menu)
                 end)
                 RageUI.IsVisible(portefeuille_menu, function()
                     local blackMoney = 0
@@ -66,4 +64,3 @@ function FUN_OPEN_F5_MENU()
         end)
     end
 end
-                   

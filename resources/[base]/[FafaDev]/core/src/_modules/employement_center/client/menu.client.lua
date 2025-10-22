@@ -25,6 +25,7 @@ function FUN_OPEN_EMPLOYEMENT_CENTER_MENU(data)
                                 selectedJob = job
                                 jobConfirmationActive = true
                                 open_employement_center_menu = false
+                                FUN_CHECK_JOB_CONFIRMATION()
                             end
                         })
                     end
@@ -35,9 +36,8 @@ function FUN_OPEN_EMPLOYEMENT_CENTER_MENU(data)
     end
 end
 
-CreateThread(function()
-    while true do
-        Wait(0)
+function FUN_CHECK_JOB_CONFIRMATION()
+    while jobConfirmationActive do
         if jobConfirmationActive and selectedJob then
             ESX.ShowHelpNotification("Voulez-vous prendre le job ~b~" .. selectedJob.label .. "~s~?\n~g~~INPUT_CONTEXT~~s~ pour accepter | ~r~~INPUT_DETONATE~~s~ pour refuser")
             
@@ -56,4 +56,5 @@ CreateThread(function()
             Wait(500)
         end
     end
-end)
+    Wait(0)
+end
