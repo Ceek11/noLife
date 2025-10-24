@@ -49,6 +49,11 @@ local tasks = {
             FUN_LOAD_BLIPS()
         end
     end},
+    {name = "FUN_LOAD_ARMURERIE", func = function() 
+        if FUN_LOAD_ARMURERIE then
+            FUN_LOAD_ARMURERIE()
+        end
+    end},
 }
 
 CreateThread(function()

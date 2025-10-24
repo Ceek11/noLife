@@ -12,6 +12,7 @@ TBL_SUBMENUES_WORLD = {
     {label = "Gestion des Peds", description = "Gestion des peds du serveur", uid = "peds"},
     {label = "Gestion des Pole Dance", description = "Gestion des pole dance du serveur", uid = "pole_dance"},
     {label = "Gestion des Concessionnaires", description = "Gestion des concessionnaires du serveur", uid = "concess"},
+    {label = "Gestion des Jobs", description = "Gestion des jobs du serveur", uid = "jobs"},
 }
 -- Création du menu builder principal
 sub_menus_admin["server"].builder = RageUI.CreateSubMenu(sub_menus_admin["server"], "Gestion Builder", "Créer et gérer les éléments du serveur")
@@ -33,6 +34,7 @@ local TBL_BLIPS = {}
 local TBL_PEDS = {}
 local TBL_POLE_DANCE = {}
 local TBL_CONCESS_BUILDER = {}
+local TBL_JOBS = {}
 
 function OpenMenuWorldAdmin()
     RageUI.IsVisible(sub_menus_admin["server"], function()
@@ -113,6 +115,13 @@ function OpenMenuWorldAdmin()
                 end)
             end
         }, sub_menus_admin["concess"])
+        RageUI.Button("Gestion des Jobs", nil, {}, true, {
+            onSelected = function()
+                CORE.trigger_server_callback("fafadev:to_server:get_jobs", function(jobs)
+                    TBL_JOBS = jobs
+                end)
+            end
+        }, sub_menus_admin["jobs"])
     end)
     
     -- Appel des builders
@@ -126,4 +135,5 @@ function OpenMenuWorldAdmin()
     peds_builder(TBL_PEDS)
     pole_dance_builder(TBL_POLE_DANCE)
     concess_builder(TBL_CONCESS_BUILDER)
+    jobs_builder(TBL_JOBS)
 end

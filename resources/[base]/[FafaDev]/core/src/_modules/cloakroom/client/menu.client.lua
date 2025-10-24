@@ -11,7 +11,7 @@ template_obj_menu.Closed = function()
     open_template_menu_cloakroom = false
 end
 
-function template_menu_cloakroom(cloakroomData)
+function FUN_OPEN_CLOAKROOM_MENU(cloakroomData)
     current_cloakroom_data = cloakroomData
     open_template_menu_cloakroom = not open_template_menu_cloakroom
     RageUI.Visible(template_obj_menu, open_template_menu_cloakroom)

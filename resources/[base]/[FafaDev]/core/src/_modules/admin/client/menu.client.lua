@@ -4,7 +4,7 @@ local tbl_sub_menus = {
     {label = "Gestion personnel", description = "Gestion personnel", RightLabel = nil, uid = "self"},
     {label = "Gestion Vehicule", description = "Gestion Vehicule", RightLabel = nil, uid = "vehicles"},
     {label = "Gestion Serveur", description = "Gestion Serveur", RightLabel = nil, uid = "server"},
-    {label = "Gestion Ranks", description = "Gestion Ranks", RightLabel = nil, uid = "ranks"},    
+    {label = "Gestion Ranks", description = "Gestion Ranks", RightLabel = nil, uid = "ranks"},
 }
 
 sub_menus_admin = {}

@@ -347,4 +347,53 @@ return {
 		stack = true,
 		close = true,
 	},
+
+	-- Items de sacs
+	["bag"] = {
+		label = "Sac",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "Un sac simple pour transporter des objets",
+		client = {
+			usetime = 2000,
+			event = 'fafadev:useBag'
+		}
+	},
+
+	["sac_bandouliere"] = {
+		label = "Sac à bandoulière",
+		weight = 800,
+		stack = false,
+		close = true,
+		description = "Un sac à bandoulière pour transporter des objets supplémentaires",
+		client = {
+			usetime = 2000,
+			event = 'fafadev:useBag'
+		}
+	},
+
+	["sac_a_dos"] = {
+		label = "Sac à dos",
+		weight = 1200,
+		stack = false,
+		close = true,
+		description = "Un sac à dos spacieux pour transporter beaucoup d'objets",
+		client = {
+			usetime = 2000,
+			event = 'fafadev:useBag'
+		}
+	},
+
+	["sac_voyage"] = {
+		label = "Sac de voyage",
+		weight = 2000,
+		stack = false,
+		close = true,
+		description = "Un grand sac de voyage pour transporter énormément d'objets",
+		client = {
+			usetime = 2000,
+			event = 'fafadev:useBag'
+		}
+	},
 }
